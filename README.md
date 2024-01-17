@@ -6,7 +6,7 @@ Add a 1-2 line summary of your project here.
 
 ## Important Links
 
-| [Timesheet](https://google.com) | [Slack channel](https://google.com) | [Project report](https://google.com) |
+| [Timesheet](https://1sfu-my.sharepoint.com/:x:/g/personal/hamarneh_sfu_ca/Ef9MXVyB76BCtVh-wMX5G44BUwr7B8rmr2NsSGYwqzJrCA?e=eBwpuA) | [Slack channel](https://sfucmpt340spring2024.slack.com/archives/C06EBKQTX8R) | [Project report](https://www.overleaf.com/9885184864hycqjvxrfhjh#4ba852) |
 |-----------|---------------|-------------------------|
 
 
