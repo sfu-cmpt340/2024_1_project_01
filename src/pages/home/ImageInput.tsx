@@ -1,23 +1,15 @@
-import { useState } from 'react'
+import { useState } from "react"
 
-const App: React.FC = () => {
-    const [image, setImage] = useState<string>('');
+interface ImageInputProps {
+    setImage: React.Dispatch<React.SetStateAction<string>>
+}
+
+const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
     const [imageURL, setImageURL] = useState<string>('');
-    
-    const [data, setData] = useState<JSON | null>(null);
 
     return (
-      <>
-        {image 
-            ? <div>
-                <img src={image} /> 
-                <button 
-                    onClick={() => setImage('')}
-                >
-                    remove image
-                </button>
-            </div>
-            : <div>
+        <>
+            <div>
                 <input 
                     type="file" 
                     accept="image/png, image/jpeg" 
@@ -45,25 +37,10 @@ const App: React.FC = () => {
                     >
                         submit
                     </button>
-                    <img src={image} />
                 </div>
             </div>
-        }
-        <div>
-            <button 
-                onClick={() => {
-                    fetch('/classify')
-                        .then(async (res: Response) => setData(await res.json()));
-                }}
-            >
-                classify
-            </button>
-            <p>
-                result from classify: {data && (data as any)['data']}
-            </p>
-        </div>
-      </>
+        </>
     );
 }
 
-export default App;
+export default ImageInput;

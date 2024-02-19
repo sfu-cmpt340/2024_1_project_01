@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import App from './App.tsx'
+import Home from '@/pages/home/index'
 
-const router: Router = createBrowserRouter([
+const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
     {
         path: '/',
-        element: <App />
+        element: <Home />
     }
 ]);
 
