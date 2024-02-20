@@ -1,11 +1,17 @@
-import { useState } from "react"
+import { useRef, useState } from 'react'
+import Webcam from 'react-webcam'
 
 interface ImageInputProps {
     setImage: React.Dispatch<React.SetStateAction<string>>
 }
 
+//  DESC: Allows users to submit images for classifying from a url, local file, or webcam.
+// PARAM: setImage - Setter from Home that saves image provided by user.
 const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
     const [imageURL, setImageURL] = useState<string>('');
+
+    const [useCamera, setUseCamera] = useState<boolean>(false);
+    const webcamRef = useRef<any>(null);
 
     return (
         <>
@@ -36,6 +42,29 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                         }}
                     >
                         submit
+                    </button>
+                </div>
+                <div>
+                    {useCamera && <div>
+                        <Webcam 
+                            ref={webcamRef}
+                            screenshotFormat="image/jpeg"
+                        />
+                        <button
+                            onClick={() => {
+                                if (webcamRef.current) {
+                                    const image: string = (webcamRef.current as any).getScreenshot();
+                                    setImage(image);
+                                }
+                            }}
+                        >
+                            take picture
+                        </button>
+                    </div>}
+                    <button
+                        onClick={() => setUseCamera(!useCamera)}
+                    >
+                        turn {useCamera ? 'off' : 'on'} camera
                     </button>
                 </div>
             </div>
