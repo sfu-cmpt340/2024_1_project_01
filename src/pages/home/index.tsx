@@ -1,32 +1,20 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-import ImageDisplay from '@/pages/home/ImageDisplay'
-import ImageInput from '@/pages/home/ImageInput'
 
+// DESC: Home page for website; displays information about classifer.
 const Home: React.FC = () => {
-    const [image, setImage] = useState<string>('');
-    
-    const [data, setData] = useState<JSON | null>(null);
-
     return (
         <>
-            {image 
-                ? <ImageDisplay image={image} setImage={setImage} />
-                : <ImageInput setImage={setImage} />
-            }
-            <div>
-                <button 
-                    onClick={() => {
-                        fetch('/classify')
-                            .then(async (res: Response) => setData(await res.json()));
-                    }}
-                >
-                    classify
+            <Link to={'/classifier'}> 
+                <button>
+                    use classfier
                 </button>
-                <p>
-                    result from classify: {data && (data as any)['data']}
-                </p>
-            </div>
+            </Link>
+            <Link to={'/'}>
+                <button>
+                    previous results
+                </button>
+            </Link>
         </>
     );
 }
