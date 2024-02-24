@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import classifyImage from './classifyImage'
 import ImageDisplay from '@/pages/classifier/ImageDisplay'
 import ImageInput from '@/pages/classifier/ImageInput'
 
@@ -18,8 +19,8 @@ const Classifier: React.FC = () => {
             <div>
                 <button 
                     onClick={() => {
-                        fetch('/classify')
-                            .then(async (res: Response) => setData(await res.json()));
+                        classifyImage(image)
+                            .then((res: JSON) => setData(res));
                     }}
                 >
                     classify
