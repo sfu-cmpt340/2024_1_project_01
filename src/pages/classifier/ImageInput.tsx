@@ -21,8 +21,12 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                     accept="image/png, image/jpeg" 
                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
                         if (e.target.files && e.target.files.length) {
-                            const objectURL: string = URL.createObjectURL(e.target.files[0]);
-                            setImage(objectURL);
+                            // read image and save it in base64
+                            const reader: FileReader = new FileReader();
+                            reader.readAsDataURL(e.target.files[0]);
+                            reader.onloadend = () => {
+                                setImage(reader.result as string);
+                            }
                         }
                     }} 
                 />
@@ -35,10 +39,16 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                     />
                     <button 
                         onClick={async () => {
+                            // grab the image from url
                             const res: Response = await fetch(imageURL);
                             const blob: Blob = await res.blob();
-                            const objectURL: string = URL.createObjectURL(blob);
-                            setImage(objectURL);
+
+                            // convert image into base64 and save it
+                            const reader: FileReader = new FileReader();
+                            reader.readAsDataURL(blob);
+                            reader.onloadend = () => {
+                                setImage(reader.result as string);
+                            }
                         }}
                     >
                         submit
@@ -52,6 +62,7 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                         />
                         <button
                             onClick={() => {
+                                // captures image from webcam and saves it
                                 if (webcamRef.current) {
                                     const image: string = (webcamRef.current as any).getScreenshot();
                                     setImage(image);
