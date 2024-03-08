@@ -1,33 +1,23 @@
 import { useState } from 'react'
 
-import classifyImage from './classifyImage'
+import Header from '@/components/Header'
 import ImageDisplay from '@/pages/classifier/ImageDisplay'
 import ImageInput from '@/pages/classifier/ImageInput'
 
 // DESC: Allows users to diagnose skin conditions from their own images.
 const Classifier: React.FC = () => {
     const [image, setImage] = useState<string>('');
-    
-    const [data, setData] = useState<JSON | null>(null);
 
     return (
         <>
-            {image 
-                ? <ImageDisplay image={image} setImage={setImage} />
-                : <ImageInput setImage={setImage} />
-            }
-            <div>
-                <button 
-                    onClick={() => {
-                        classifyImage(image)
-                            .then((res: JSON) => setData(res));
-                    }}
-                >
-                    classify
-                </button>
-                <p>
-                    result from classify: {data && (data as any)['data']}
-                </p>
+            <div className="h-screen w-screen bg-white relative">
+                <Header />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    {image 
+                        ? <ImageDisplay image={image} setImage={setImage} />
+                        : <ImageInput setImage={setImage} />
+                    }
+                </div>
             </div>
         </>
     );
