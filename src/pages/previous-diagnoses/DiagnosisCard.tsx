@@ -43,7 +43,7 @@ const DiagnosisCard: React.FC<DiagnosisCardProps> = ({ diagnosis, setUpdate }) =
                 {date.toLocaleString('en-us', { 
                     hour: 'numeric', 
                     minute: 'numeric' })
-                } - {date.toLocaleString('en-us', { 
+                + ' - ' + date.toLocaleString('en-us', { 
                     month: 'long', 
                     day: 'numeric', 
                     year: 'numeric' 
