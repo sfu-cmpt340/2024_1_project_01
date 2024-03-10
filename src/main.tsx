@@ -8,6 +8,7 @@ import '@/styles.css'
 
 import Classifier from '@/pages/classifier/index'
 import Home from '@/pages/home/index'
+import PreviousDiagnoses from '@/pages/previous-diagnoses/index'
 
 const theme = createTheme({});
 
@@ -21,7 +22,8 @@ const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
         element: <Classifier />
     },
     {
-        path: '/previous-diagnoses'
+        path: '/previous-diagnoses',
+        element: <PreviousDiagnoses />
     },
     {
         path: '/diagnosis/:datetime'
