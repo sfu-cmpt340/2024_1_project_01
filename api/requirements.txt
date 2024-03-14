@@ -6,4 +6,5 @@ jax[cuda12_pip]==0.4.24
 keras==3.0.5
 keras-cv==0.8.2
 
+Pillow
 Flask
