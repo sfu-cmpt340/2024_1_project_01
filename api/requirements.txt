@@ -1,1 +1,9 @@
-flask
+pip==24.0
+
+--find-links https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+jax[cuda12_pip]==0.4.24
+
+keras==3.0.5
+keras-cv==0.8.2
+
+Flask
