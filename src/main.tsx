@@ -7,6 +7,8 @@ import '@mantine/core/styles.css'
 import '@/styles.css'
 
 import Classifier from '@/pages/classifier/index'
+import Diagnosis from '@/pages/diagnosis/index'
+import Error from '@/pages/error/index'
 import Home from '@/pages/home/index'
 import PreviousDiagnoses from '@/pages/previous-diagnoses/index'
 
@@ -26,14 +28,15 @@ const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
         element: <PreviousDiagnoses />
     },
     {
-        path: '/diagnosis/:datetime'
+        path: '/diagnosis/:datetime',
+        element: <Diagnosis />
     },
     {
         path: '/about'
     },
     {
         path: '*',
-        element: <p>404 Error</p>
+        element: <Error />
     }
 ]);
 
