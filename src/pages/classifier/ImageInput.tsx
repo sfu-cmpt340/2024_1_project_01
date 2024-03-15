@@ -93,7 +93,7 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                         </Button>
                     </div>
                 </div>
-                : <div className="relative z-0">
+                : <div className="relative z-0 -m-8">
                     <Webcam
                         ref={webcamRef}
                         screenshotFormat="image/jpeg"

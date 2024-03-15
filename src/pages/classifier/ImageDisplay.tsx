@@ -1,6 +1,10 @@
-import { Button } from '@mantine/core'
+import { Button, Loader } from '@mantine/core'
+import { useState } from 'react'
+import { NavigateFunction, useNavigate } from 'react-router-dom'
 import { IconSearch, IconTrash } from '@tabler/icons-react'
 
+import Result from '@/classes/Result'
+import ResultsDB from '@/classes/ResultsDB'
 import classifyImage from './classifyImage'
 
 interface ImageDisplayProps {
@@ -13,41 +17,73 @@ interface ImageDisplayProps {
 // PARAM: image - The user's submitted image to be classified.
 //        setImage - Setter from Home that allows users to remove their provided image.
 const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
+    const [loading, setLoading] = useState<boolean>(false);
+    
+    const navigate: NavigateFunction = useNavigate();
+
     return (
         <div className="flex justify-center">
             <div className="flex flex-col gap-2">
                 <img className="h-[480px] w-[640px]" src={image} /> 
-                <div className="flex place-content-center gap-8 m-4">
-                    <Button
-                        className="w-[35%]"
-                        variant="filled"
-                        color="#DB5461"
-                        size="lg"
-                        radius="md"
-                        leftSection={<IconTrash className="text-white" size="32" />}
-                        onClick={() => setImage('')}
-                    >
-                        <p className="font-Inter font-bold text-white text-xl">
-                            Remove
+                {!loading
+                    ? <div className="flex place-content-center gap-8 m-4">
+                        <Button
+                            className="w-[35%]"
+                            variant="filled"
+                            color="#DB5461"
+                            size="lg"
+                            radius="md"
+                            leftSection={<IconTrash className="text-white" size="32" />}
+                            onClick={() => setImage('')}
+                        >
+                            <p className="font-Inter font-bold text-white text-xl">
+                                Remove
+                            </p>
+                        </Button>
+                        <Button
+                            className="w-[35%]"
+                            variant="filled"
+                            color="#3943B7"
+                            size="lg"
+                            radius="md"
+                            leftSection={<IconSearch className="text-white" size="32" />}
+                            onClick={() => {
+                                setLoading(true);
+                                classifyImage(image)
+                                    .then((res: JSON) => {
+                                        // sort conditions
+                                        const conditionObj: [string, number][] = Object.entries(res)
+                                            .sort((a: [string, number], b: [string, number]) => {
+                                                return b[1] - a[1];
+                                            });
+
+                                        // create diagnosis
+                                        const conditionMap: Map<string, number> = new Map<string, number>(conditionObj);
+                                        const diagnosis: Result = new Result(Date.now(), image, conditionMap);
+
+                                        // insert into db
+                                        const db: ResultsDB = new ResultsDB();
+                                        db.results.add(diagnosis);
+                                        
+                                        // redirect
+                                        navigate(`/diagnosis/${diagnosis.datetime}`);
+                                    })
+                                    .catch(() => console.log('error'))
+                                    .finally(() => setLoading(false));
+                            }}
+                        >
+                            <p className="font-Inter font-bold text-white text-xl">
+                                Diagnose
+                            </p>
+                        </Button>
+                    </div>
+                    : <div className="flex flex-col items-center m-4 gap-4">
+                        <Loader color="#3943B7" />
+                        <p>
+                            Classifying your image...
                         </p>
-                    </Button>
-                    <Button
-                        className="w-[35%]"
-                        variant="filled"
-                        color="#3943B7"
-                        size="lg"
-                        radius="md"
-                        leftSection={<IconSearch className="text-white" size="32" />}
-                        onClick={() => {
-                            classifyImage(image)
-                                .then((res: JSON) => console.log(res));
-                        }}
-                    >
-                        <p className="font-Inter font-bold text-white text-xl">
-                            Diagnose
-                        </p>
-                    </Button>
-                </div>
+                    </div>
+                }
             </div>
         </div>
     );

@@ -9,17 +9,17 @@ const Classifier: React.FC = () => {
     const [image, setImage] = useState<string>('');
 
     return (
-        <>
-            <div className="h-screen w-screen bg-white relative">
-                <Header />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    {image 
-                        ? <ImageDisplay image={image} setImage={setImage} />
-                        : <ImageInput setImage={setImage} />
-                    }
+        <div className="min-w-screen min-h-screen bg-white">
+            <Header />
+            {!image 
+                ? <div className="my-24">
+                    <ImageInput setImage={setImage} />
                 </div>
-            </div>
-        </>
+                : <div className="my-8">
+                    <ImageDisplay image={image} setImage={setImage} />
+                </div>    
+            }
+        </div>
     );
 }
 
