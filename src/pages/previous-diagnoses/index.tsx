@@ -1,4 +1,6 @@
+import { Pagination } from '@mantine/core'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import Result from '@/classes/Result'
 import Header from '@/components/Header'
@@ -10,6 +12,8 @@ import fetchAllDiagnoses from '@/pages/previous-diagnoses/fetchAllDiagnoses'
 const PreviousDiagnoses: React.FC = () => {
     const [results, setResults] = useState<Result[]>([]);
     const [update, setUpdate] = useState<any>(null);
+
+    const [page, setPage] = useState<number>(1);
 
     // get all diagnoses from database
     useEffect(() => {
@@ -27,9 +31,10 @@ const PreviousDiagnoses: React.FC = () => {
     }, [update]);
     // update is 'modified' in the diagnosis card whenever a diagnosis is deleted 
     
-    // sort results by most recent then generates diagnosis cards
+    // sort results by most recent then generates diagnosis cards depending on the page
     const diagnoses: JSX.Element[] = results
         .sort((a: Result, b: Result): number => b.datetime - a.datetime)
+        .slice((page-1)*10, (page-1)*10 + 10)
         .map((diagnosis: Result) => {
             return (
                 <div className="flex-1" key={diagnosis.datetime}>
@@ -40,7 +45,7 @@ const PreviousDiagnoses: React.FC = () => {
 
     return (
         <>
-            <div className="bg-white">
+            <div className="min-w-screen min-h-screen bg-white">
                 <Header />
                 <div className="flex bg-blue font-Inter text-white">
                     <div className="flex flex-col my-[6rem] mx-[15rem] gap-4">
@@ -48,12 +53,30 @@ const PreviousDiagnoses: React.FC = () => {
                             View your previous diagnoses.
                         </p>
                         <p>
-                            Results are sorted by most recently diagnosed.
+                            Your results are shown below and are sorted by most recently diagnosed.
                         </p>
                     </div>
                 </div>
                 <div className="flex flex-col mx-[15rem] my-10 gap-10">
-                    {diagnoses}
+                    {diagnoses.length 
+                        ? diagnoses
+                        : <p className="font-Inter text-center">
+                            There are currently no diagnoses saved.&nbsp;
+                            <Link className="text-lightblue" to="/classifier"> 
+                                Click here to get started.
+                            </Link>
+                        </p>
+                    }
+                </div>
+                <div className="flex place-content-center p-6">
+                    <Pagination
+                        className="font-Inter"
+                        total={Math.ceil(results.length / 10)}
+                        color="#3943B7"
+                        radius="md"
+                        value={page}
+                        onChange={setPage}
+                    />
                 </div>
             </div>
         </>

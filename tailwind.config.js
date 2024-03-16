@@ -8,6 +8,7 @@ export default {
             },
             colors: {
                 'blue': '#3943B7',
+                'lightblue': '#006BA6',
                 'white': '#FCF7F8',
                 'black': '#1C1C1C',
                 'aqua': '#006BA6',
