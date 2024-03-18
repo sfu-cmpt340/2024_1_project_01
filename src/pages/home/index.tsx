@@ -13,7 +13,7 @@ const Home: React.FC = () => {
                 <img className="w-full h-full block md:hidden" src="/hero-mobile.jpg" />
             </div>
             <div className="w-full h-full flex items-center">
-                <div className="flex flex-col gap-6 md:gap-8 font-Inter relative z-10 m-5 md:m-20 text-center">
+                <div className="flex flex-col gap-6 md:gap-8 font-Inter relative z-10 m-5 md:m-20 text-center md:text-left">
                     <p className="font-black text-white text-6xl md:text-8xl">
                         Skintector
                     </p>
