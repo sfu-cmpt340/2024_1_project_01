@@ -39,7 +39,7 @@ const DiagnosisCard: React.FC<DiagnosisCardProps> = ({ diagnosis, setUpdate }) =
 
     return (
         <div className="flex flex-col border-4 border-grey rounded-md font-Inter font-bold text-black">
-            <p className="text-2xl mx-6 my-4">
+            <p className="text-2xl mx-6 my-4 text-center md:text-left">
                 {date.toLocaleString('en-us', { 
                     hour: 'numeric', 
                     minute: 'numeric' })
@@ -49,42 +49,46 @@ const DiagnosisCard: React.FC<DiagnosisCardProps> = ({ diagnosis, setUpdate }) =
                     year: 'numeric' 
                 })}
             </p>
-            <div className="flex mx-6 mb-4">
+            <div className="flex flex-col md:flex-row mx-6 mb-4 items-center md:items-stretch">
                 <img className="w-[240px] h-[180px]" src={diagnosis.image} />
-                <div className="flex flex-col flex-1 mx-6">
-                    <Progress.Root radius="md" size={15}>
+                <div className="w-full flex flex-col md:ml-6 items-center">
+                    <Progress.Root 
+                        className="w-[80%] md:w-full my-4 md:my-0"
+                        radius="md" 
+                        size={15}
+                        >
                         <Tooltip 
                             className="font-Inter text-white" 
                             color="#FF4242" 
-                            label={`${condition1[0]} (${condition1[1]}%)`}
+                            label={`${condition1[0].replace(/_/g, ' ')} (${condition1[1].toFixed(2)}%)`}
                         >
                             <Progress.Section value={condition1[1]} color="#FF4242" />
                         </Tooltip>
                         <Tooltip 
                             className="font-Inter text-white" 
                             color="#58BC82" 
-                            label={`${condition2[0]} (${condition2[1]}%)`}
+                            label={`${condition2[0].replace(/_/g, ' ')} (${condition2[1].toFixed(2)}%)`}
                         >
                             <Progress.Section value={condition2[1]} color="#58BC82" />
                         </Tooltip>
                         <Tooltip 
                             className="font-Inter text-white" 
                             color="#FCBF49" 
-                            label={`${condition3[0]} (${condition3[1]}%)`}
+                            label={`${condition3[0].replace(/_/g, ' ')} (${condition3[1].toFixed(2)}%)`}
                         >
                             <Progress.Section value={condition3[1]} color="#FCBF49" />
                         </Tooltip>
                         <Tooltip 
                             className="font-Inter text-white" 
                             color="#3C91E6" 
-                            label={`Other (${other}%)`}
+                            label={`Other (${other.toFixed(2)}%)`}
                         >
                             <Progress.Section value={other} color="#3C91E6" />
                         </Tooltip>
                     </Progress.Root>
-                    <div className="flex gap-8 flex-1 items-end place-content-end">
+                    <div className="self-stretch flex-1 flex flex-col xl:flex-row gap-4 xl:gap-8 items-center xl:items-end place-content-end">
                         <Button
-                            className="w-[30%]"
+                            className="w-[80%] lg:w-[55%] xl:w-[32.5%]"
                             variant="filled"
                             color="#3943B7"
                             size="lg"
@@ -98,7 +102,7 @@ const DiagnosisCard: React.FC<DiagnosisCardProps> = ({ diagnosis, setUpdate }) =
                             </p>
                         </Button>
                         <Button
-                            className="w-[30%]"
+                            className="w-[80%] lg:w-[55%] xl:w-[32.5%]"
                             variant="filled"
                             color="#DB5461"
                             size="lg"

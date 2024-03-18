@@ -48,16 +48,16 @@ const PreviousDiagnoses: React.FC = () => {
             <div className="min-w-screen min-h-screen bg-white">
                 <Header />
                 <div className="flex bg-blue font-Inter text-white">
-                    <div className="flex flex-col my-[6rem] mx-[15rem] gap-4">
+                    <div className="flex flex-col my-12 md:my-24 mx-4 md:mx-20 lg:mx-40 xl:mx-60 gap-4">
                         <p className="font-bold text-2xl">
-                            View your previous diagnoses.
+                            View your previous diagnoses
                         </p>
-                        <p>
+                        <p className="text-justify md:text-left">
                             Your results are shown below and are sorted by most recently diagnosed.
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col mx-[15rem] my-10 gap-10">
+                <div className="flex flex-col my-[4.5rem]  mx-4 md:mx-20 lg:mx-40 xl:mx-60 gap-10">
                     {diagnoses.length 
                         ? diagnoses
                         : <p className="font-Inter text-center">
