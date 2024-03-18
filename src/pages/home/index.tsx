@@ -4,25 +4,26 @@ import { Link } from 'react-router-dom'
 // DESC: Home page for website; displays information about classifer.
 const Home: React.FC = () => {
     return (
-        <>
-            <div className="w-screen h-screen absolute z-0">
+        <div className="w-screen h-screen">
+            <div className="w-full h-full absolute z-0">
                 <Overlay 
-                    gradient="linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(255,255,255,0) 100%)"
+                    gradient="linear-gradient(90deg, rgba(30,30,30,1) 0%, rgba(255,255,255,0) 100%)"
                 />
-                <img className="w-screen h-screen" src="/hero.jpg" />
+                <img className="w-full h-full hidden md:block" src="/hero.jpg" />
+                <img className="w-full h-full block md:hidden" src="/hero-mobile.jpg" />
             </div>
-            <div className="w-screen h-screen flex items-center">
-                <div className="flex flex-col gap-8 font-Inter relative z-10 m-20">
-                    <p className="font-black text-white text-8xl">
+            <div className="w-full h-full flex items-center">
+                <div className="flex flex-col gap-6 md:gap-8 font-Inter relative z-10 m-5 md:m-20 text-center">
+                    <p className="font-black text-white text-6xl md:text-8xl">
                         Skintector
                     </p>
-                    <Progress className="w-5/6" color="#3943B7" value={100} />
-                    <p className="font-bold text-white text-2xl">
+                    <Progress className="w-full md:w-5/6" color="#3943B7" value={100} />
+                    <p className="font-bold text-white text-xl md:text-2xl">
                         Diagnose skin conditions from the comfort of your own home
                     </p>
-                    <div className="flex gap-12">
+                    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 my-8 md:my-0">
                         <Button
-                            className="w-[30%]"
+                            className="w-full md:w-[30%]"
                             variant="filled" 
                             color="#3943B7"
                             size="lg" 
@@ -35,7 +36,7 @@ const Home: React.FC = () => {
                             </p>
                         </Button>
                         <Button
-                            className="w-[30%]"
+                            className="w-full md:w-[30%]"
                             variant="filled"
                             color="#CED3DC"
                             size="lg"
@@ -52,7 +53,7 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
