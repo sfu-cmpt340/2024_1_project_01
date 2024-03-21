@@ -1,0 +1,18 @@
+{
+    "description": "Keloid is a type of raised scar that occurs when the skin overreacts to an injury or trauma, forming a thick, raised area of skin that can be itchy, painful, and cosmetically bothersome.",
+    "possible causes": [
+        "Genetics",
+        "Injury or trauma to the skin",
+        "Inflammation"
+    ],
+    "symptoms": [
+        "Thick, raised scar",
+        "Itching",
+        "Pain or tenderness"
+    ],
+    "treatments": [
+        "Steroid injections",
+        "Surgical removal",
+        "Silicone gel sheets"
+    ]
+}

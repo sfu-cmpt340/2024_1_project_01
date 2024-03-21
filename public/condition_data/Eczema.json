@@ -1,0 +1,18 @@
+{
+    "description": "Eczema is a common skin condition that causes dry, red, itchy patches on the skin. It can vary in severity and may come and go.",
+    "possible causes": [
+        "Genetics",
+        "Environmental factors",
+        "Skin barrier dysfunction"
+    ],
+    "symptoms": [
+        "Itchy skin",
+        "Red or inflamed skin",
+        "Dry, scaly patches"
+    ],
+    "treatments": [
+        "Moisturizing creams",
+        "Topical corticosteroids",
+        "Antihistamines for itching relief"
+    ]
+}

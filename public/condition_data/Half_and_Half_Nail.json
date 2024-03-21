@@ -1,0 +1,20 @@
+{
+    "description": "Half and Half Nail is a condition where the nail is divided into two distinct colors, typically white at the top and pink or brown at the bottom. It can be a sign of various underlying health issues.",
+    "possible causes": [
+        "Iron deficiency anemia",
+        "Kidney disease",
+        "Heart disease",
+        "Chemotherapy",
+        "Arsenic poisoning"
+    ],
+    "symptoms": [
+        "Visible line dividing the nail",
+        "Change in nail color",
+        "Brittle nails"
+    ],
+    "treatments": [
+        "Treating the underlying health condition",
+        "Improving nutrition",
+        "Avoiding exposure to toxins"
+    ]
+}

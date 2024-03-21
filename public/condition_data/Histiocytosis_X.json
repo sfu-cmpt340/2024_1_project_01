@@ -1,0 +1,21 @@
+{
+    "description": "Histiocytosis X is a group of rare disorders involving an overproduction of white blood cells called histiocytes. These cells can build up in various tissues and organs, leading to inflammation and tissue damage.",
+    "possible causes": [
+        "Genetic mutations",
+        "Immune system dysfunction",
+        "Environmental factors"
+    ],
+    "symptoms": [
+        "Bone pain",
+        "Swelling of the liver or spleen",
+        "Skin rash",
+        "Fever",
+        "Weight loss"
+    ],
+    "treatments": [
+        "Chemotherapy",
+        "Steroids",
+        "Surgery",
+        "Targeted therapy"
+    ]
+}

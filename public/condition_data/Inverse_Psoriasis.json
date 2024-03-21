@@ -1,0 +1,20 @@
+{
+    "description": "Inverse psoriasis is a type of psoriasis that appears as smooth, red patches of skin. It typically occurs in skin folds, such as the armpits, groin, and under the breasts. Unlike other types of psoriasis, it may not have the scaling or thick plaques commonly associated with the condition.",
+    "possible causes": [
+        "Genetics",
+        "Immune system dysfunction",
+        "Obesity",
+        "Certain medications"
+    ],
+    "symptoms": [
+        "Red, inflamed skin",
+        "Skin that is smooth and shiny",
+        "Itching or burning sensation"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Topical calcineurin inhibitors",
+        "Light therapy",
+        "Biologic medications"
+    ]
+}

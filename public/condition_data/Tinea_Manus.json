@@ -1,0 +1,18 @@
+{
+    "description": "Tinea Manus, also known as ringworm of the hand, is a fungal infection that affects the skin on the hands. It is characterized by red, scaly patches that may itch or burn.",
+    "possible causes": [
+        "Direct contact with an infected person or animal",
+        "Sharing personal items like towels or clothing",
+        "Warm and humid environments"
+    ],
+    "symptoms": [
+        "Red, scaly patches on the hands",
+        "Itching or burning sensation",
+        "Cracked or peeling skin"
+    ],
+    "treatments": [
+        "Antifungal creams or ointments",
+        "Keeping the affected area clean and dry",
+        "Avoiding sharing personal items"
+    ]
+}

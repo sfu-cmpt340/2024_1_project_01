@@ -1,0 +1,18 @@
+{
+    "description": "Onychomycosis is a fungal infection of the nails that can cause discoloration, thickening, and crumbling of the nail.",
+    "possible causes": [
+        "Fungal infection",
+        "Poor foot hygiene",
+        "Wearing tight-fitting shoes"
+    ],
+    "symptoms": [
+        "Thickened nails",
+        "Brittle or crumbly nails",
+        "Discoloration of the nails"
+    ],
+    "treatments": [
+        "Antifungal medications",
+        "Topical treatments",
+        "Oral medications"
+    ]
+}

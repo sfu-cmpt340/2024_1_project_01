@@ -1,0 +1,18 @@
+{
+    "description": "Mal_Perforans is a medical condition characterized by...",
+    "possible causes": [
+        "cause 1",
+        "cause 2",
+        "..."
+    ],
+    "symptoms": [
+        "symptom 1",
+        "symptom 2",
+        "..."
+    ],
+    "treatments": [
+        "treatment 1",
+        "treatment 2",
+        "..."
+    ]
+}

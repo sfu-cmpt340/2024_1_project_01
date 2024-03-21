@@ -1,0 +1,16 @@
+{
+    "description": "Radiodermatitis is a skin condition caused by exposure to radiation therapy, resulting in inflammation and irritation of the skin.",
+    "possible causes": [
+        "Exposure to radiation therapy"
+    ],
+    "symptoms": [
+        "Redness",
+        "Itching",
+        "Peeling of the skin"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Moisturizers",
+        "Cool compresses"
+    ]
+}

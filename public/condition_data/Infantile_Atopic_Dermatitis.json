@@ -1,0 +1,18 @@
+{
+    "description": "Infantile Atopic Dermatitis is a common skin condition that causes red, itchy patches on the skin. It often appears in infancy and can persist into childhood and adulthood.",
+    "possible causes": [
+        "Genetics",
+        "Environmental factors",
+        "Immune system dysfunction"
+    ],
+    "symptoms": [
+        "Red, inflamed skin",
+        "Itching",
+        "Dry, scaly patches"
+    ],
+    "treatments": [
+        "Moisturizers",
+        "Topical corticosteroids",
+        "Antihistamines"
+    ]
+}

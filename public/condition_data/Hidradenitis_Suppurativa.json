@@ -1,0 +1,20 @@
+{
+    "description": "Hidradenitis Suppurativa is a chronic skin condition characterized by inflamed, painful lumps that can develop in areas where skin rubs together, such as the armpits, groin, and buttocks. These lumps can break open and cause tunnels under the skin.",
+    "possible causes": [
+        "Genetics",
+        "Hormonal changes",
+        "Obesity",
+        "Smoking"
+    ],
+    "symptoms": [
+        "Painful lumps",
+        "Blackheads",
+        "Tunnels under the skin",
+        "Scarring"
+    ],
+    "treatments": [
+        "Antibiotics",
+        "Corticosteroids",
+        "Surgery"
+    ]
+}

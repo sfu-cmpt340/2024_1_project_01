@@ -1,0 +1,23 @@
+{
+    "description": "Ulcer is a sore or lesion that forms in the lining of the stomach or small intestine. It can be caused by factors such as bacterial infection or prolonged use of nonsteroidal anti-inflammatory drugs (NSAIDs).",
+    "possible causes": [
+        "Bacterial infection (H. pylori)",
+        "Prolonged use of NSAIDs",
+        "Excessive alcohol consumption",
+        "Smoking",
+        "Stress"
+    ],
+    "symptoms": [
+        "Burning pain in the abdomen",
+        "Nausea",
+        "Vomiting",
+        "Bloating",
+        "Loss of appetite"
+    ],
+    "treatments": [
+        "Antibiotics to treat H. pylori infection",
+        "Proton pump inhibitors to reduce stomach acid",
+        "Antacids to neutralize stomach acid",
+        "Lifestyle changes (e.g., avoiding trigger foods, reducing stress)"
+    ]
+}

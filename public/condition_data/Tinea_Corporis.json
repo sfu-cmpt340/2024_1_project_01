@@ -1,0 +1,18 @@
+{
+    "description": "Tinea Corporis, also known as ringworm, is a common fungal infection of the skin that can cause red, itchy, and scaly patches.",
+    "possible causes": [
+        "Fungal infection from dermatophytes like Trichophyton or Microsporum species",
+        "Direct contact with an infected person or animal",
+        "Sharing contaminated items like towels or clothing"
+    ],
+    "symptoms": [
+        "Red, circular rash with raised edges",
+        "Itching and burning sensation",
+        "Flaky or scaly skin"
+    ],
+    "treatments": [
+        "Antifungal creams or ointments",
+        "Oral antifungal medications in severe cases",
+        "Keeping the affected area clean and dry"
+    ]
+}

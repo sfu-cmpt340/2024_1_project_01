@@ -1,0 +1,18 @@
+{
+    "description": "Bowen's Disease is a type of skin cancer that is characterized by red, scaly patches on the skin.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "Genetic factors",
+        "Weakened immune system"
+    ],
+    "symptoms": [
+        "Persistent red, scaly patch on the skin",
+        "Itching or burning sensation",
+        "Bleeding or oozing from the affected area"
+    ],
+    "treatments": [
+        "Topical medications",
+        "Cryotherapy (freezing the affected area)",
+        "Surgical removal"
+    ]
+}

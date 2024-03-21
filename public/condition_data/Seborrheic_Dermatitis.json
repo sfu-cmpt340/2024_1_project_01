@@ -1,0 +1,21 @@
+{
+    "description": "Seborrheic Dermatitis is a common skin condition that mainly affects the scalp, causing redness, itching, and flaking. It can also occur on other oily areas of the body, such as the face and chest.",
+    "possible causes": [
+        "Overgrowth of yeast on the skin",
+        "Genetic factors",
+        "Hormonal changes",
+        "Stress"
+    ],
+    "symptoms": [
+        "Redness",
+        "Itching",
+        "Flaking or scaling skin",
+        "Greasy or oily patches"
+    ],
+    "treatments": [
+        "Medicated shampoos containing ketoconazole or selenium sulfide",
+        "Topical corticosteroids",
+        "Antifungal creams",
+        "Anti-inflammatory medications"
+    ]
+}

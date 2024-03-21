@@ -1,0 +1,18 @@
+{
+    "description": "Androgenetic Alopecia is a common form of hair loss that affects both men and women. It is characterized by a gradual thinning of hair, typically starting at the temples and crown of the head.",
+    "possible causes": [
+        "Genetics",
+        "Hormonal changes",
+        "Ageing"
+    ],
+    "symptoms": [
+        "Thinning hair on the scalp",
+        "Receding hairline",
+        "Bald spots"
+    ],
+    "treatments": [
+        "Minoxidil (Rogaine)",
+        "Finasteride (Propecia)",
+        "Hair transplant surgery"
+    ]
+}

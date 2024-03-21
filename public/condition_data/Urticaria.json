@@ -1,0 +1,19 @@
+{
+    "description": "Urticaria, also known as hives, is a skin condition characterized by red, raised, itchy welts on the skin. These welts can vary in size and shape and may come and go over a period of hours.",
+    "possible causes": [
+        "Allergic reactions to food, medication, or insect bites",
+        "Infections",
+        "Stress",
+        "Autoimmune disorders"
+    ],
+    "symptoms": [
+        "Red, raised welts on the skin",
+        "Itching",
+        "Swelling"
+    ],
+    "treatments": [
+        "Antihistamines",
+        "Corticosteroids",
+        "Avoiding triggers"
+    ]
+}

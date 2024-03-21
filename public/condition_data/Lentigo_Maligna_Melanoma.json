@@ -1,0 +1,18 @@
+{
+    "description": "Lentigo Maligna Melanoma is a type of skin cancer that typically develops from pre-existing lentigo maligna, a type of melanoma in situ. It usually occurs in sun-exposed areas of the skin, such as the face, neck, and arms.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "Genetic predisposition",
+        "Weakened immune system"
+    ],
+    "symptoms": [
+        "Irregularly shaped or colored lesion on the skin",
+        "Changes in the size or color of a mole",
+        "Itching or bleeding of the affected area"
+    ],
+    "treatments": [
+        "Surgical excision",
+        "Radiation therapy",
+        "Immunotherapy"
+    ]
+}

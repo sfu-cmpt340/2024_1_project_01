@@ -1,0 +1,17 @@
+{
+    "description": "Linear Epidermal Nevus is a rare skin condition characterized by the presence of linear patches of thickened, raised skin that may be pigmented or have a different color than the surrounding skin. These patches typically appear at birth or develop in early childhood.",
+    "possible causes": [
+        "Genetic mutations",
+        "Mosaicism during embryonic development"
+    ],
+    "symptoms": [
+        "Linear patches of thickened, raised skin",
+        "Skin discoloration",
+        "Itching or irritation"
+    ],
+    "treatments": [
+        "Topical treatments to reduce skin thickness",
+        "Laser therapy for pigmentation",
+        "Surgical removal in severe cases"
+    ]
+}

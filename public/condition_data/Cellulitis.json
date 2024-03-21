@@ -1,0 +1,19 @@
+{
+    "description": "Cellulitis is a common bacterial skin infection that can be painful and cause redness, swelling, and warmth in the affected area. It typically occurs when bacteria enter the skin through a cut or break in the skin.",
+    "possible causes": [
+        "Bacteria such as Staphylococcus and Streptococcus",
+        "Skin injuries or wounds",
+        "Weak immune system"
+    ],
+    "symptoms": [
+        "Redness and swelling",
+        "Warmth in the affected area",
+        "Pain or tenderness",
+        "Fever and chills"
+    ],
+    "treatments": [
+        "Antibiotics to fight the bacterial infection",
+        "Keeping the affected area clean and elevated",
+        "Pain relievers for discomfort"
+    ]
+}

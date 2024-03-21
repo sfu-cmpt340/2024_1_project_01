@@ -1,0 +1,18 @@
+{
+    "description": "Green Nail is a condition where the nails appear green in color due to various factors.",
+    "possible causes": [
+        "Fungal infection",
+        "Bacterial infection",
+        "Prolonged exposure to certain chemicals"
+    ],
+    "symptoms": [
+        "Discoloration of the nail",
+        "Thickening of the nail",
+        "Pain or discomfort"
+    ],
+    "treatments": [
+        "Antifungal medication",
+        "Antibiotics (if bacterial infection is present)",
+        "Avoiding exposure to harmful chemicals"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Basal cell carcinoma is a type of skin cancer that begins in the basal cells, which are responsible for producing new skin cells. It is the most common form of skin cancer, typically appearing as a waxy bump or a flat, flesh-colored or brown scar-like lesion.",
+    "possible causes": [
+        "Excessive exposure to ultraviolet (UV) radiation from the sun or tanning beds",
+        "Genetic predisposition",
+        "Weakened immune system"
+    ],
+    "symptoms": [
+        "A pearly or waxy bump",
+        "A flat, flesh-colored or brown scar-like lesion",
+        "A bleeding or oozing sore that doesn't heal"
+    ],
+    "treatments": [
+        "Surgical removal",
+        "Mohs surgery",
+        "Cryotherapy",
+        "Topical medications"
+    ]
+}

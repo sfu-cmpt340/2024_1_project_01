@@ -1,0 +1,20 @@
+{
+    "description": "Paronychia is a common infection that occurs around the nail. It can be acute or chronic and is often caused by bacteria or fungi entering the skin around the nail.",
+    "possible causes": [
+        "Bacterial infection",
+        "Fungal infection",
+        "Ingrown nail"
+    ],
+    "symptoms": [
+        "Pain and tenderness around the nail",
+        "Swelling",
+        "Redness",
+        "Pus-filled blisters"
+    ],
+    "treatments": [
+        "Warm water soaks",
+        "Antibiotics (if bacterial)",
+        "Antifungal medication (if fungal)",
+        "Drainage of pus (if necessary)"
+    ]
+}

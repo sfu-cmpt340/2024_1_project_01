@@ -1,0 +1,21 @@
+{
+    "description": "Xerosis is a medical term for abnormally dry skin. It can be caused by a variety of factors, including environmental conditions, genetics, and certain medical conditions.",
+    "possible causes": [
+        "Low humidity",
+        "Harsh soaps or detergents",
+        "Aging",
+        "Certain skin conditions"
+    ],
+    "symptoms": [
+        "Rough or scaly skin",
+        "Itching",
+        "Cracks in the skin",
+        "Flaking or peeling"
+    ],
+    "treatments": [
+        "Moisturizing creams or lotions",
+        "Avoiding harsh soaps",
+        "Using a humidifier",
+        "Drinking plenty of water"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Stasis Dermatitis is a skin condition that occurs when there is poor circulation in the legs, leading to swelling, redness, and itching.",
+    "possible causes": [
+        "Poor circulation in the legs",
+        "Varicose veins",
+        "Heart failure"
+    ],
+    "symptoms": [
+        "Swelling in the legs",
+        "Red or discolored skin",
+        "Itching and pain"
+    ],
+    "treatments": [
+        "Compression stockings",
+        "Elevating the legs",
+        "Topical corticosteroids"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "description": "Epidermal Nevus is a rare skin condition characterized by the presence of raised, wart-like growths on the skin. These growths are typically present at birth or develop in early childhood.",
+    "possible causes": [
+        "Genetic mutations",
+        "Mosaicism during embryonic development"
+    ],
+    "symptoms": [
+        "Raised, wart-like growths on the skin",
+        "Skin discoloration",
+        "Itching or irritation"
+    ],
+    "treatments": [
+        "Topical treatments to reduce growths",
+        "Laser therapy",
+        "Surgical removal in severe cases"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "description": "Tinea Faciale is a fungal infection that affects the skin on the face. It is commonly known as facial ringworm.",
+    "possible causes": [
+        "Fungal infection from dermatophytes",
+        "Direct contact with infected person or contaminated objects"
+    ],
+    "symptoms": [
+        "Red, scaly patches on the face",
+        "Itching and burning sensation",
+        "Raised borders on the affected area"
+    ],
+    "treatments": [
+        "Antifungal creams or ointments",
+        "Oral antifungal medications",
+        "Keeping the affected area clean and dry"
+    ]
+}

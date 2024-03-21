@@ -1,0 +1,17 @@
+{
+    "description": "Fixed Drug Eruption is a type of allergic reaction that occurs when a person is exposed to a certain medication. It typically presents as a rash or skin lesion at the same site each time the person takes the triggering drug.",
+    "possible causes": [
+        "Reaction to specific medications",
+        "Immune system response to certain drugs"
+    ],
+    "symptoms": [
+        "Red or purple rash or skin lesion",
+        "Itching or burning sensation",
+        "Swelling"
+    ],
+    "treatments": [
+        "Discontinuing the triggering medication",
+        "Topical corticosteroids for skin relief",
+        "Antihistamines for itching"
+    ]
+}

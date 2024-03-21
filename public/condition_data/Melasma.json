@@ -1,0 +1,18 @@
+{
+    "description": "Melasma is a common skin condition that causes dark, discolored patches on the skin. It typically appears on the face, particularly on the cheeks, forehead, nose, and upper lip.",
+    "possible causes": [
+        "Hormonal changes, such as pregnancy or birth control pills",
+        "Sun exposure",
+        "Genetics"
+    ],
+    "symptoms": [
+        "Dark patches on the skin",
+        "Irregularly shaped patches",
+        "Patchy discoloration"
+    ],
+    "treatments": [
+        "Sun protection (e.g., sunscreen, hats)",
+        "Topical medications (e.g., hydroquinone, retinoids)",
+        "Chemical peels or laser treatments"
+    ]
+}

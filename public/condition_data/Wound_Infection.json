@@ -1,0 +1,20 @@
+{
+    "description": "Wound infection is a condition where bacteria or other pathogens enter a wound, leading to inflammation and potential complications.",
+    "possible causes": [
+        "Poor wound care",
+        "Contaminated objects or surfaces",
+        "Compromised immune system"
+    ],
+    "symptoms": [
+        "Redness and warmth around the wound",
+        "Swelling",
+        "Pain or tenderness",
+        "Pus or discharge",
+        "Fever"
+    ],
+    "treatments": [
+        "Antibiotics",
+        "Wound cleaning and dressing changes",
+        "Surgical debridement if necessary"
+    ]
+}

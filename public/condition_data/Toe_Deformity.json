@@ -1,0 +1,18 @@
+{
+    "description": "Toe deformity is a condition where there is an abnormality in the shape or position of one or more toes.",
+    "possible causes": [
+        "Genetics",
+        "Injury",
+        "Arthritis"
+    ],
+    "symptoms": [
+        "Pain",
+        "Swelling",
+        "Difficulty walking"
+    ],
+    "treatments": [
+        "Physical therapy",
+        "Orthotic devices",
+        "Surgery"
+    ]
+}

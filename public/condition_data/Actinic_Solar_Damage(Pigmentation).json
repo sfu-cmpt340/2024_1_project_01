@@ -1,0 +1,18 @@
+{
+    "description": "Actinic Solar Damage, also known as pigmentation, refers to skin damage caused by prolonged exposure to the sun's harmful UV rays. This can result in dark spots, freckles, and uneven skin tone.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "Failure to use sunscreen",
+        "Genetic predisposition"
+    ],
+    "symptoms": [
+        "Dark spots on the skin",
+        "Freckles",
+        "Uneven skin tone"
+    ],
+    "treatments": [
+        "Topical creams containing ingredients like hydroquinone or retinoids",
+        "Chemical peels",
+        "Laser therapy"
+    ]
+}

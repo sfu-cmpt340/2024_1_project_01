@@ -1,0 +1,22 @@
+{
+    "description": "Acne Vulgaris is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells. It often results in pimples, blackheads, and whiteheads on the face, neck, chest, and back.",
+    "possible causes": [
+        "Excess oil production",
+        "Clogged hair follicles",
+        "Bacteria",
+        "Hormonal changes"
+    ],
+    "symptoms": [
+        "Pimples",
+        "Blackheads",
+        "Whiteheads",
+        "Inflammation",
+        "Redness"
+    ],
+    "treatments": [
+        "Topical creams containing benzoyl peroxide or salicylic acid",
+        "Prescription medications like retinoids or antibiotics",
+        "Oral contraceptives for hormonal acne",
+        "Lifestyle changes such as proper skincare routine and diet"
+    ]
+}

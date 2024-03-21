@@ -1,0 +1,18 @@
+{
+    "description": "Allergic Contact Dermatitis is a type of skin reaction that occurs when the skin comes into contact with a substance that the immune system recognizes as foreign and triggers an allergic response. This can result in redness, itching, and swelling of the skin.",
+    "possible causes": [
+        "Exposure to allergens such as nickel, fragrances, or certain chemicals",
+        "Repeated contact with irritants like soaps or detergents",
+        "Genetic predisposition to allergic reactions"
+    ],
+    "symptoms": [
+        "Red, itchy rash",
+        "Swelling or blistering of the skin",
+        "Dry, cracked skin"
+    ],
+    "treatments": [
+        "Avoiding contact with the allergen or irritant",
+        "Topical corticosteroids to reduce inflammation",
+        "Antihistamines to relieve itching"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "description": "Hailey-Hailey Disease, also known as familial benign pemphigus, is a rare genetic skin disorder characterized by the formation of blisters and erosions in areas of friction and skin folds. It is caused by mutations in the ATP2C1 gene, which leads to a dysfunction in calcium transport within cells.",
+    "possible causes": [
+        "Genetic mutations in the ATP2C1 gene"
+    ],
+    "symptoms": [
+        "Blisters and erosions in skin folds",
+        "Redness and irritation in affected areas",
+        "Pain and itching"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Oral antibiotics",
+        "Calcium channel blockers"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "description": "Candidiasis is a fungal infection caused by yeast overgrowth, most commonly Candida albicans. It can affect various parts of the body, including the mouth, throat, skin, and genital areas.",
+    "possible causes": [
+        "Weakened immune system",
+        "Antibiotic use",
+        "Poor hygiene",
+        "High sugar diet"
+    ],
+    "symptoms": [
+        "White patches in the mouth or throat",
+        "Redness and soreness in the affected area",
+        "Itching and burning sensation",
+        "Pain during urination or sexual intercourse"
+    ],
+    "treatments": [
+        "Antifungal medications (oral or topical)",
+        "Maintaining good hygiene practices",
+        "Avoiding sugary foods",
+        "Probiotics to restore healthy bacteria balance"
+    ]
+}

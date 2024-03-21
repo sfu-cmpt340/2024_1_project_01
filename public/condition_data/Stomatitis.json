@@ -1,0 +1,24 @@
+{
+    "description": "Stomatitis is an inflammation of the mucous lining inside the mouth, which can result in painful sores or ulcers.",
+    "possible causes": [
+        "Viral infections (such as herpes simplex)",
+        "Bacterial infections",
+        "Fungal infections (such as oral thrush)",
+        "Irritants (such as tobacco, alcohol, or spicy foods)",
+        "Autoimmune disorders"
+    ],
+    "symptoms": [
+        "Painful sores or ulcers in the mouth",
+        "Swollen gums",
+        "Difficulty eating or swallowing",
+        "Bad breath",
+        "Fever"
+    ],
+    "treatments": [
+        "Pain relief medications (such as acetaminophen or ibuprofen)",
+        "Topical treatments (such as mouth rinses or gels)",
+        "Antibiotics (for bacterial infections)",
+        "Antifungal medications (for fungal infections)",
+        "Avoiding irritants"
+    ]
+}

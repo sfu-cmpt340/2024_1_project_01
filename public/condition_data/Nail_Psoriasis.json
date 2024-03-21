@@ -1,0 +1,20 @@
+{
+    "description": "Nail Psoriasis is a condition that affects the nails, causing changes in their appearance and texture. It is a type of psoriasis that specifically targets the nails.",
+    "possible causes": [
+        "Genetics",
+        "Immune system dysfunction",
+        "Environmental factors"
+    ],
+    "symptoms": [
+        "Pitting or dents in the nails",
+        "Thickened nails",
+        "Discoloration of the nails",
+        "Separation of the nail from the nail bed"
+    ],
+    "treatments": [
+        "Topical treatments",
+        "Oral medications",
+        "Light therapy",
+        "Biologic medications"
+    ]
+}

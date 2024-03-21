@@ -1,0 +1,20 @@
+{
+    "description": "Onycholysis is a condition where the nail separates from the nail bed, typically starting at the tip and progressing towards the cuticle. It can be caused by various factors such as trauma, fungal infections, psoriasis, or certain medications.",
+    "possible causes": [
+        "Trauma to the nail",
+        "Fungal infections",
+        "Psoriasis",
+        "Certain medications"
+    ],
+    "symptoms": [
+        "Separation of the nail from the nail bed",
+        "Discoloration of the nail",
+        "Pain or tenderness"
+    ],
+    "treatments": [
+        "Identifying and addressing the underlying cause",
+        "Keeping the affected nail clean and dry",
+        "Avoiding trauma to the nail",
+        "Topical antifungal medications (if fungal infection is present)"
+    ]
+}

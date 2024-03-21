@@ -1,0 +1,20 @@
+{
+    "description": "Drug Eruption is a skin reaction that occurs as a result of taking certain medications. It can manifest as a rash, blistering, or other skin changes.",
+    "possible causes": [
+        "Allergic reaction to medication",
+        "Side effects of medication",
+        "Interaction between medications"
+    ],
+    "symptoms": [
+        "Red or purple rash",
+        "Blisters",
+        "Itching",
+        "Swelling"
+    ],
+    "treatments": [
+        "Discontinuing the offending medication",
+        "Topical corticosteroids",
+        "Antihistamines",
+        "Moisturizers"
+    ]
+}

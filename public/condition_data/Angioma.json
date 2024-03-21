@@ -1,0 +1,18 @@
+{
+    "description": "Angioma is a type of benign tumor that consists of small blood vessels. It can occur in various parts of the body.",
+    "possible causes": [
+        "Genetic factors",
+        "Hormonal changes",
+        "Injury or trauma to the affected area"
+    ],
+    "symptoms": [
+        "Visible red or purple mass on the skin",
+        "Pain or discomfort in the affected area",
+        "Bleeding or bruising"
+    ],
+    "treatments": [
+        "Observation and monitoring",
+        "Surgical removal",
+        "Laser therapy"
+    ]
+}

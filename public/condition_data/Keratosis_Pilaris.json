@@ -1,0 +1,18 @@
+{
+    "description": "Keratosis Pilaris is a common skin condition that causes rough patches and small, acne-like bumps on the skin. It is often referred to as 'chicken skin' due to its appearance.",
+    "possible causes": [
+        "Genetics",
+        "Keratin buildup in hair follicles",
+        "Dry skin"
+    ],
+    "symptoms": [
+        "Bumpy skin texture",
+        "Redness",
+        "Irritation"
+    ],
+    "treatments": [
+        "Moisturizing creams",
+        "Exfoliation",
+        "Topical retinoids"
+    ]
+}

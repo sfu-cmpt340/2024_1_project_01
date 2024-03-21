@@ -1,0 +1,15 @@
+{
+    "description": "Nevus Incipiens is a medical term for a developing or early-stage mole on the skin.",
+    "possible causes": [
+        "Genetics",
+        "Excessive sun exposure"
+    ],
+    "symptoms": [
+        "Small, pigmented spot on the skin",
+        "Changes in size, shape, or color of the mole"
+    ],
+    "treatments": [
+        "Regular monitoring by a dermatologist",
+        "Surgical removal if necessary"
+    ]
+}

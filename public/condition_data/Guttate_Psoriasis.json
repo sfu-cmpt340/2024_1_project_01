@@ -1,0 +1,18 @@
+{
+    "description": "Guttate Psoriasis is a type of psoriasis that appears as small, red, scaly spots on the skin. It is often triggered by a bacterial infection, such as strep throat.",
+    "possible causes": [
+        "Bacterial infection, such as strep throat",
+        "Genetics",
+        "Stress"
+    ],
+    "symptoms": [
+        "Small, red spots on the skin",
+        "Itching",
+        "Burning sensation"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Phototherapy",
+        "Oral medications"
+    ]
+}

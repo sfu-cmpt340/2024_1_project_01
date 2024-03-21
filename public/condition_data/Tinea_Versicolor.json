@@ -1,0 +1,18 @@
+{
+    "description": "Tinea Versicolor is a common fungal infection of the skin that causes discolored patches.",
+    "possible causes": [
+        "Overgrowth of yeast on the skin",
+        "Hot and humid weather conditions",
+        "Weakened immune system"
+    ],
+    "symptoms": [
+        "Patches of skin that may be lighter or darker than surrounding skin",
+        "Itching or scaling of the skin",
+        "Increased sweating"
+    ],
+    "treatments": [
+        "Antifungal creams or shampoos",
+        "Oral antifungal medications",
+        "Keeping the affected area clean and dry"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "description": "Arsenical Keratosis is a skin condition caused by chronic exposure to arsenic. It is characterized by thickened, rough, and discolored patches on the skin.",
+    "possible causes": [
+        "Chronic exposure to arsenic in contaminated water or food",
+        "Occupational exposure to arsenic in industries like mining or smelting"
+    ],
+    "symptoms": [
+        "Thickened, rough patches on the skin",
+        "Discoloration of the skin",
+        "Itching and burning sensation"
+    ],
+    "treatments": [
+        "Avoiding further exposure to arsenic",
+        "Topical treatments to improve skin appearance",
+        "Consulting a dermatologist for specialized care"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Stasis Edema is a condition characterized by fluid buildup in the lower extremities due to poor circulation.",
+    "possible causes": [
+        "Venous insufficiency",
+        "Heart failure",
+        "Obesity"
+    ],
+    "symptoms": [
+        "Swelling in the legs",
+        "Pain or discomfort",
+        "Skin discoloration"
+    ],
+    "treatments": [
+        "Compression therapy",
+        "Elevation of legs",
+        "Diuretics"
+    ]
+}

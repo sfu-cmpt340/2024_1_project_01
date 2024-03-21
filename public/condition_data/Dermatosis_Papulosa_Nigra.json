@@ -1,0 +1,18 @@
+{
+    "description": "Dermatosis Papulosa Nigra is a common skin condition characterized by small, benign, dark bumps on the face and neck, particularly in individuals with darker skin tones.",
+    "possible causes": [
+        "Genetic predisposition",
+        "Sun exposure",
+        "Hormonal changes"
+    ],
+    "symptoms": [
+        "Small, dark bumps on the skin",
+        "Usually painless",
+        "May increase in number with age"
+    ],
+    "treatments": [
+        "Cryotherapy",
+        "Electrosurgery",
+        "Laser therapy"
+    ]
+}

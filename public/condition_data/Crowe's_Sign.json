@@ -1,0 +1,18 @@
+{
+    "description": "Crowe's Sign is a medical sign characterized by the presence of a visible pulsation in the epigastric region, typically seen in patients with aortic regurgitation.",
+    "possible causes": [
+        "Aortic regurgitation",
+        "Aortic aneurysm",
+        "Hypertension"
+    ],
+    "symptoms": [
+        "Visible pulsation in the epigastric region",
+        "Chest pain",
+        "Shortness of breath"
+    ],
+    "treatments": [
+        "Treatment of underlying cause (e.g. surgery for aortic regurgitation)",
+        "Medications to manage symptoms",
+        "Monitoring and follow-up care"
+    ]
+}

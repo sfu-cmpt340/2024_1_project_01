@@ -1,0 +1,18 @@
+{
+    "description": "Actinic Solar Damage, also known as Solar Elastosis, is a condition caused by prolonged exposure to the sun's harmful UV rays. It results in damage to the skin's elastin fibers, leading to premature aging and increased risk of skin cancer.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "Failure to use sunscreen",
+        "Genetic predisposition"
+    ],
+    "symptoms": [
+        "Wrinkles",
+        "Skin discoloration",
+        "Thickened skin"
+    ],
+    "treatments": [
+        "Use of sunscreen",
+        "Topical retinoids",
+        "Laser therapy"
+    ]
+}

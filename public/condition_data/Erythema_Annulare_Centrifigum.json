@@ -1,0 +1,19 @@
+{
+    "description": "Erythema Annulare Centrifigum is a rare skin condition characterized by raised, ring-shaped rashes that may be itchy or painful. The exact cause of this condition is unknown, but it is believed to be related to immune system dysfunction. Some possible causes include infections, medications, and underlying health conditions.",
+    "possible causes": [
+        "Immune system dysfunction",
+        "Infections",
+        "Medications",
+        "Underlying health conditions"
+    ],
+    "symptoms": [
+        "Raised, ring-shaped rashes",
+        "Itchiness",
+        "Painfulness"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Antihistamines",
+        "Phototherapy"
+    ]
+}

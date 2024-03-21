@@ -1,0 +1,18 @@
+{
+    "description": "Nevus Comedonicus is a rare skin condition characterized by the presence of grouped, dilated hair follicles filled with keratin plugs, resembling blackheads. It typically appears as small, dark papules on the skin.",
+    "possible causes": [
+        "Genetic mutations",
+        "Hormonal changes",
+        "Skin inflammation"
+    ],
+    "symptoms": [
+        "Black or dark papules on the skin",
+        "Skin bumps with a central dark plug",
+        "Occasional itching or discomfort"
+    ],
+    "treatments": [
+        "Topical retinoids",
+        "Oral retinoids",
+        "Laser therapy"
+    ]
+}

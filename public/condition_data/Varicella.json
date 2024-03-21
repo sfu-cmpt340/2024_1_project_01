@@ -1,0 +1,16 @@
+{
+    "description": "Varicella, commonly known as chickenpox, is a highly contagious viral infection characterized by an itchy rash with small, fluid-filled blisters.",
+    "possible causes": [
+        "Varicella-zoster virus (VZV) infection"
+    ],
+    "symptoms": [
+        "Itchy rash",
+        "Fever",
+        "Headache",
+        "Fatigue"
+    ],
+    "treatments": [
+        "Symptomatic relief (e.g. calamine lotion for itching)",
+        "Antiviral medications (in severe cases)"
+    ]
+}

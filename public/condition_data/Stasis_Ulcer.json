@@ -1,0 +1,21 @@
+{
+    "description": "Stasis Ulcer is a type of wound that occurs when there is poor circulation in the legs, leading to skin breakdown and ulcers.",
+    "possible causes": [
+        "Venous insufficiency",
+        "Obesity",
+        "Prolonged standing or sitting",
+        "Previous leg injury or surgery"
+    ],
+    "symptoms": [
+        "Pain or tenderness in the affected area",
+        "Swelling",
+        "Redness or discoloration of the skin",
+        "Open sores or ulcers"
+    ],
+    "treatments": [
+        "Compression therapy",
+        "Wound care",
+        "Elevation of the legs",
+        "Surgical intervention in severe cases"
+    ]
+}

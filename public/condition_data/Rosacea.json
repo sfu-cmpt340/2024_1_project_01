@@ -1,0 +1,21 @@
+{
+    "description": "Rosacea is a common skin condition that causes redness and visible blood vessels in your face. It may also produce small, red, pus-filled bumps.",
+    "possible causes": [
+        "Genetics",
+        "Abnormalities in facial blood vessels",
+        "Demodex mites",
+        "H. pylori bacteria"
+    ],
+    "symptoms": [
+        "Facial redness",
+        "Swollen red bumps",
+        "Eye problems",
+        "Enlarged nose"
+    ],
+    "treatments": [
+        "Topical medications",
+        "Oral antibiotics",
+        "Laser therapy",
+        "Avoiding triggers like spicy foods and alcohol"
+    ]
+}

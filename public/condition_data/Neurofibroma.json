@@ -1,0 +1,18 @@
+{
+    "description": "Neurofibroma is a type of tumor that grows on nerves, usually benign in nature.",
+    "possible causes": [
+        "Genetic mutations",
+        "Neurofibromatosis type 1 or type 2",
+        "Exposure to certain chemicals or radiation"
+    ],
+    "symptoms": [
+        "Pain or discomfort",
+        "Numbness or weakness in affected area",
+        "Visible lumps or bumps on or under the skin"
+    ],
+    "treatments": [
+        "Surgical removal of the tumor",
+        "Medication to manage symptoms",
+        "Regular monitoring for changes or growth"
+    ]
+}

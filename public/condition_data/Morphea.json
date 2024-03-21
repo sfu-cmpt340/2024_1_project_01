@@ -1,0 +1,16 @@
+{
+    "description": "Morphea is a rare skin condition that causes patches of hard, discolored skin to form on the body. These patches are usually painless and may range in size from small to large.",
+    "possible causes": [
+        "Exact cause is unknown, but it is believed to be related to an overproduction of collagen in the skin."
+    ],
+    "symptoms": [
+        "Thickened or hardened patches of skin",
+        "Red or purple discoloration",
+        "Itching or burning in affected areas"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Phototherapy",
+        "Physical therapy to improve mobility"
+    ]
+}

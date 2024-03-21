@@ -1,0 +1,16 @@
+{
+    "description": "Kerion is a type of scalp infection that is characterized by inflamed, pus-filled lesions. It is often caused by a fungal infection, specifically by the fungus Trichophyton verrucosum.",
+    "possible causes": [
+        "Fungal infection by Trichophyton verrucosum"
+    ],
+    "symptoms": [
+        "Inflamed, pus-filled lesions on the scalp",
+        "Swelling and tenderness in the affected area",
+        "Hair loss in the infected area"
+    ],
+    "treatments": [
+        "Antifungal medications",
+        "Topical corticosteroids to reduce inflammation",
+        "Good hygiene practices to prevent further infection"
+    ]
+}

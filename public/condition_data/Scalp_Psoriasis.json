@@ -1,0 +1,18 @@
+{
+    "description": "Scalp psoriasis is a common skin disorder that causes red, itchy, and scaly patches to form on the scalp.",
+    "possible causes": [
+        "Genetics",
+        "Immune system dysfunction",
+        "Environmental factors"
+    ],
+    "symptoms": [
+        "Red patches on the scalp",
+        "Itching and burning sensations",
+        "Silvery scales or plaques on the scalp"
+    ],
+    "treatments": [
+        "Topical treatments (such as corticosteroids)",
+        "Medicated shampoos",
+        "Light therapy"
+    ]
+}

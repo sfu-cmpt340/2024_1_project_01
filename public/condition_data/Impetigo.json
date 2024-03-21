@@ -1,0 +1,18 @@
+{
+    "description": "Impetigo is a highly contagious skin infection that is caused by bacteria. It is characterized by red sores that can break open and form a yellow-brown crust.",
+    "possible causes": [
+        "Bacteria, such as Staphylococcus aureus or Streptococcus pyogenes, entering the skin through cuts, scrapes, or insect bites",
+        "Poor hygiene practices",
+        "Close contact with someone who has impetigo"
+    ],
+    "symptoms": [
+        "Red sores that may break open and ooze fluid",
+        "Yellow-brown crust that forms over the sores",
+        "Itching or soreness"
+    ],
+    "treatments": [
+        "Antibiotic ointments or creams",
+        "Oral antibiotics for more severe cases",
+        "Keeping the affected area clean and covered"
+    ]
+}

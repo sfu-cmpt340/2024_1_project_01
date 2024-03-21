@@ -1,0 +1,18 @@
+{
+    "description": "Lichen Planus is a chronic inflammatory condition that affects the skin, mucous membranes, hair, and nails. It is characterized by itchy, flat-topped, polygonal bumps that can be purple, pink, or brown in color.",
+    "possible causes": [
+        "Autoimmune reaction",
+        "Genetic predisposition",
+        "Certain medications"
+    ],
+    "symptoms": [
+        "Itchy rash",
+        "Flat-topped bumps",
+        "White, lacy patches on mucous membranes"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Oral antihistamines",
+        "Phototherapy"
+    ]
+}

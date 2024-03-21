@@ -1,0 +1,21 @@
+{
+    "description": "Acute Eczema is a skin condition characterized by red, inflamed, and itchy patches on the skin. It is a temporary flare-up of eczema that can be triggered by various factors.",
+    "possible causes": [
+        "Allergies",
+        "Irritants",
+        "Stress",
+        "Weather changes"
+    ],
+    "symptoms": [
+        "Redness",
+        "Itching",
+        "Swelling",
+        "Blisters"
+    ],
+    "treatments": [
+        "Moisturizing creams",
+        "Topical corticosteroids",
+        "Antihistamines",
+        "Avoiding triggers"
+    ]
+}

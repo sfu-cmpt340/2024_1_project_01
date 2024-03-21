@@ -1,0 +1,18 @@
+{
+    "description": "Vitiligo is a long-term skin condition characterized by patches of the skin losing their pigment. It occurs when pigment-producing cells die or stop functioning.",
+    "possible causes": [
+        "Genetic factors",
+        "Autoimmune disorders",
+        "Environmental triggers"
+    ],
+    "symptoms": [
+        "Loss of skin color in patches",
+        "Premature whitening or graying of the hair on the scalp, eyelashes, eyebrows, or beard",
+        "Loss of color in the tissues that line the inside of the mouth and nose (mucous membranes)"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Phototherapy",
+        "Depigmentation"
+    ]
+}

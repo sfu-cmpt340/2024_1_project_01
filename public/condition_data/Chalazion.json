@@ -1,0 +1,20 @@
+{
+    "description": "Chalazion is a small, painless lump or swelling in the eyelid that is caused by a blocked oil gland.",
+    "possible causes": [
+        "Blockage of oil glands in the eyelid",
+        "Bacterial infection",
+        "Inflammation of the eyelid"
+    ],
+    "symptoms": [
+        "Swelling on the eyelid",
+        "Tenderness or pain",
+        "Redness",
+        "Blurry vision if the chalazion is large"
+    ],
+    "treatments": [
+        "Warm compress to help reduce swelling",
+        "Eyelid massage to help unclog the blocked gland",
+        "Antibiotic ointment if there is an infection",
+        "Surgical drainage in severe cases"
+    ]
+}

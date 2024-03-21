@@ -1,0 +1,17 @@
+{
+    "description": "Nevus Spilus is a type of skin condition characterized by a brown or tan macule or patch with darker spots or freckles within it.",
+    "possible causes": [
+        "Genetic factors",
+        "Sun exposure",
+        "Hormonal changes"
+    ],
+    "symptoms": [
+        "Brown or tan patch with darker spots",
+        "Freckles within the patch"
+    ],
+    "treatments": [
+        "Observation and monitoring",
+        "Cosmetic camouflage",
+        "Laser therapy"
+    ]
+}

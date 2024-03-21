@@ -1,0 +1,18 @@
+{
+    "description": "Cutaneous T-Cell Lymphoma is a type of cancer that affects the skin and is characterized by the abnormal growth of T-cells in the skin.",
+    "possible causes": [
+        "Genetic mutations",
+        "Weakened immune system",
+        "Exposure to certain chemicals or toxins"
+    ],
+    "symptoms": [
+        "Red, scaly patches on the skin",
+        "Itching",
+        "Skin lesions or tumors"
+    ],
+    "treatments": [
+        "Topical medications",
+        "Phototherapy",
+        "Chemotherapy"
+    ]
+}

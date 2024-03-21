@@ -1,0 +1,18 @@
+{
+    "description": "Ichthyosis is a group of skin disorders characterized by dry, scaly skin that may be thickened or cracked. It is a genetic condition that affects the skin's ability to shed dead skin cells properly.",
+    "possible causes": [
+        "Genetic mutations",
+        "Inherited from parents with the condition",
+        "Certain medical conditions or medications"
+    ],
+    "symptoms": [
+        "Dry, scaly skin",
+        "Thickened or cracked skin",
+        "Itching or discomfort"
+    ],
+    "treatments": [
+        "Moisturizing creams or ointments",
+        "Topical medications to reduce scaling",
+        "Lifestyle changes to manage symptoms"
+    ]
+}

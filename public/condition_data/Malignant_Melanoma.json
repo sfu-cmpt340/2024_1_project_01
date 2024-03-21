@@ -1,0 +1,19 @@
+{
+    "description": "Malignant Melanoma is a type of skin cancer that develops in the cells that produce melanin, the pigment that gives your skin its color. It is considered the most serious type of skin cancer due to its ability to spread to other parts of the body.",
+    "possible causes": [
+        "Excessive exposure to ultraviolet (UV) radiation from the sun or tanning beds",
+        "Genetic factors",
+        "Weakened immune system"
+    ],
+    "symptoms": [
+        "Irregularly shaped moles or spots on the skin",
+        "Changes in the size, shape, or color of existing moles",
+        "Itching, bleeding, or crusting of a mole"
+    ],
+    "treatments": [
+        "Surgical removal of the melanoma",
+        "Chemotherapy",
+        "Immunotherapy",
+        "Targeted therapy"
+    ]
+}

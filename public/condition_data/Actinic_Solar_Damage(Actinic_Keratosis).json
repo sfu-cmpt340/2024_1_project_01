@@ -1,0 +1,18 @@
+{
+    "description": "Actinic solar damage, also known as actinic keratosis, is a skin condition caused by prolonged exposure to ultraviolet (UV) radiation from the sun. It typically appears as rough, scaly patches on the skin that can range in color from pink to brown.",
+    "possible causes": [
+        "Prolonged exposure to UV radiation",
+        "Frequent sunburns",
+        "Weakened immune system"
+    ],
+    "symptoms": [
+        "Rough, scaly patches on the skin",
+        "Itching or burning sensation",
+        "Changes in color or texture of skin"
+    ],
+    "treatments": [
+        "Topical creams or gels",
+        "Cryotherapy (freezing)",
+        "Photodynamic therapy"
+    ]
+}

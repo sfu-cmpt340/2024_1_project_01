@@ -1,0 +1,21 @@
+{
+    "description": "Rhinophyma is a skin disorder that causes the nose to become red, swollen, and bulbous. It is a subtype of rosacea, a chronic inflammatory skin condition.",
+    "possible causes": [
+        "Genetics",
+        "Chronic sun exposure",
+        "Alcohol consumption",
+        "Hormonal changes"
+    ],
+    "symptoms": [
+        "Redness and swelling of the nose",
+        "Thickening of the skin on the nose",
+        "Enlarged pores",
+        "Visible blood vessels"
+    ],
+    "treatments": [
+        "Topical medications",
+        "Oral antibiotics",
+        "Laser therapy",
+        "Surgical procedures"
+    ]
+}

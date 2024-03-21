@@ -1,0 +1,19 @@
+{
+    "description": "Dry Skin Eczema is a skin condition characterized by inflammation, itching, and dryness of the skin.",
+    "possible causes": [
+        "Genetic predisposition",
+        "Environmental factors",
+        "Skin barrier dysfunction"
+    ],
+    "symptoms": [
+        "Itching",
+        "Redness",
+        "Dryness",
+        "Flaking"
+    ],
+    "treatments": [
+        "Moisturizing creams",
+        "Topical corticosteroids",
+        "Avoiding triggers"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Erythema Multiforme is a skin condition characterized by red or purple patches, often in a target or bullseye pattern. It is typically caused by infections, medications, or an allergic reaction.",
+    "possible causes": [
+        "Infections (such as herpes simplex virus or mycoplasma)",
+        "Medications (such as antibiotics or anticonvulsants)",
+        "Allergic reactions (to medications or infections)"
+    ],
+    "symptoms": [
+        "Red or purple patches on the skin",
+        "Target or bullseye pattern on the skin",
+        "Itching or burning sensation"
+    ],
+    "treatments": [
+        "Identifying and treating the underlying cause",
+        "Topical corticosteroids for skin inflammation",
+        "Antihistamines for itching relief"
+    ]
+}

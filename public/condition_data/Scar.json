@@ -1,0 +1,18 @@
+{
+    "description": "Scar is a mark left on the skin after a wound or injury has healed. It is a natural part of the healing process.",
+    "possible causes": [
+        "Injury or trauma to the skin",
+        "Surgical incisions",
+        "Burns"
+    ],
+    "symptoms": [
+        "Visible mark on the skin",
+        "Discoloration",
+        "Texture changes"
+    ],
+    "treatments": [
+        "Topical creams or ointments",
+        "Laser therapy",
+        "Surgical revision"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Sebaceous Gland Hyperplasia is a common benign condition where the sebaceous glands in the skin become enlarged, leading to small yellowish bumps on the face, particularly on the forehead, nose, and cheeks.",
+    "possible causes": [
+        "Overactive sebaceous glands",
+        "Hormonal changes",
+        "Genetics"
+    ],
+    "symptoms": [
+        "Small yellowish bumps on the skin",
+        "Raised lesions on the face",
+        "Occasional itchiness"
+    ],
+    "treatments": [
+        "Topical retinoids",
+        "Cryotherapy",
+        "Laser therapy"
+    ]
+}

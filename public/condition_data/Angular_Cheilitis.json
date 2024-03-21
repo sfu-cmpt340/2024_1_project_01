@@ -1,0 +1,18 @@
+{
+    "description": "Angular cheilitis is a condition characterized by inflammation and cracking at the corners of the mouth. It can be caused by a variety of factors, including fungal or bacterial infections, nutritional deficiencies, or excessive saliva accumulation.",
+    "possible causes": [
+        "Fungal or bacterial infections",
+        "Nutritional deficiencies",
+        "Excessive saliva accumulation"
+    ],
+    "symptoms": [
+        "Painful cracks or sores at the corners of the mouth",
+        "Redness and swelling",
+        "Burning or itching sensation"
+    ],
+    "treatments": [
+        "Antifungal or antibacterial creams",
+        "Topical corticosteroids",
+        "Vitamin or mineral supplements"
+    ]
+}

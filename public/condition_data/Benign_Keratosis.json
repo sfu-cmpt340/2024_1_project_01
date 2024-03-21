@@ -1,0 +1,18 @@
+{
+    "description": "Benign Keratosis is a non-cancerous skin condition characterized by the growth of rough, scaly patches on the skin. These patches are usually harmless but can be unsightly or cause discomfort.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "Genetic predisposition",
+        "Aging"
+    ],
+    "symptoms": [
+        "Rough, scaly patches on the skin",
+        "Itching or irritation",
+        "Changes in skin color or texture"
+    ],
+    "treatments": [
+        "Topical creams or ointments",
+        "Cryotherapy (freezing)",
+        "Laser therapy"
+    ]
+}

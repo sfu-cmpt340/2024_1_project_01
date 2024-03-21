@@ -1,0 +1,17 @@
+{
+    "description": "Seborrheic Keratosis is a common noncancerous skin growth that appears as a wart-like or waxy bump. It is usually brown, black, or light tan in color and can vary in size.",
+    "possible causes": [
+        "Exact cause is unknown, but it may be related to genetics, sun exposure, or age."
+    ],
+    "symptoms": [
+        "Raised, round or oval growths on the skin",
+        "Waxy, wart-like appearance",
+        "Itching or irritation"
+    ],
+    "treatments": [
+        "No treatment necessary unless causing symptoms or for cosmetic reasons",
+        "Cryotherapy (freezing)",
+        "Electrosurgery (burning)",
+        "Shave excision"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "description": "Desquamation is the process of shedding dead skin cells from the outermost layer of the skin. It can occur as a result of various skin conditions or environmental factors.",
+    "possible causes": [
+        "Skin conditions such as eczema, psoriasis, or dermatitis",
+        "Excessive sun exposure",
+        "Harsh chemicals in skincare products",
+        "Underlying medical conditions like thyroid disorders or autoimmune diseases"
+    ],
+    "symptoms": [
+        "Flaky or peeling skin",
+        "Irritation or itching",
+        "Redness or inflammation",
+        "Dryness"
+    ],
+    "treatments": [
+        "Moisturizing the skin regularly",
+        "Using gentle skincare products",
+        "Avoiding harsh chemicals or irritants",
+        "Seeking medical treatment for underlying skin conditions"
+    ]
+}

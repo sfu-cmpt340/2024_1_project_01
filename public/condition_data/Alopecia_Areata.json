@@ -1,0 +1,20 @@
+{
+    "description": "Alopecia Areata is a common autoimmune skin disease that causes hair loss on the scalp and other areas of the body. It usually starts with one or more small, round, smooth patches on the scalp and can progress to total hair loss (alopecia totalis) or complete loss of body hair (alopecia universalis). The exact cause of Alopecia Areata is unknown, but it is thought to be a combination of genetic, environmental, and immune factors.",
+    "possible causes": [
+        "Genetic predisposition",
+        "Autoimmune response",
+        "Environmental triggers"
+    ],
+    "symptoms": [
+        "Sudden hair loss in small, round patches",
+        "Patches may merge and lead to total hair loss",
+        "Changes in nail texture or shape"
+    ],
+    "treatments": [
+        "Topical corticosteroids",
+        "Intralesional corticosteroid injections",
+        "Immunotherapy",
+        "Topical minoxidil",
+        "Wigs or hairpieces for cosmetic coverage"
+    ]
+}

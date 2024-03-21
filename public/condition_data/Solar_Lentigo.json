@@ -1,0 +1,14 @@
+{
+    "description": "Solar Lentigo is a type of skin condition characterized by dark, flat spots on the skin that are caused by sun exposure. These spots are usually harmless but can be unsightly.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "UV radiation"
+    ],
+    "symptoms": [
+        "Dark, flat spots on the skin"
+    ],
+    "treatments": [
+        "Sunscreen to prevent further darkening",
+        "Topical creams for lightening the spots"
+    ]
+}

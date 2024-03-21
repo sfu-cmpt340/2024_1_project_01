@@ -1,0 +1,18 @@
+{
+    "description": "Psoriasis is a chronic autoimmune condition that causes the rapid growth of skin cells, leading to thick, red, scaly patches on the skin.",
+    "possible causes": [
+        "Genetics",
+        "Immune system dysfunction",
+        "Environmental factors"
+    ],
+    "symptoms": [
+        "Red patches of skin covered with silvery scales",
+        "Dry, cracked skin that may bleed",
+        "Itching, burning or soreness"
+    ],
+    "treatments": [
+        "Topical treatments (such as corticosteroids or retinoids)",
+        "Phototherapy",
+        "Oral medications (such as methotrexate or cyclosporine)"
+    ]
+}

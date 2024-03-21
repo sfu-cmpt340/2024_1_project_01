@@ -1,0 +1,17 @@
+{
+    "description": "Lipoma is a benign tumor made up of fat tissue. It is usually soft to the touch and movable under the skin.",
+    "possible causes": [
+        "Genetic factors",
+        "Obesity",
+        "Previous trauma to the area"
+    ],
+    "symptoms": [
+        "Soft, doughy lump under the skin",
+        "Usually painless",
+        "Slow-growing"
+    ],
+    "treatments": [
+        "Observation (if asymptomatic)",
+        "Surgical removal if necessary for cosmetic reasons or if causing discomfort"
+    ]
+}

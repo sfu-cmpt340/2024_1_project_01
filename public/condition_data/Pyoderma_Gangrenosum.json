@@ -1,0 +1,20 @@
+{
+    "description": "Pyoderma Gangrenosum is a rare, inflammatory skin condition characterized by painful ulcers that typically begin as small bumps or blisters. These ulcers can rapidly grow in size and depth, often with a purplish or blue edge. The exact cause of Pyoderma Gangrenosum is unknown, but it is believed to be related to an abnormal immune response. It is not contagious.",
+    "possible causes": [
+        "Abnormal immune response",
+        "Genetic predisposition",
+        "Certain medications or underlying health conditions"
+    ],
+    "symptoms": [
+        "Painful ulcers or sores",
+        "Red or purple bumps",
+        "Skin lesions that rapidly grow in size",
+        "Fever and fatigue"
+    ],
+    "treatments": [
+        "Topical or oral corticosteroids",
+        "Immunosuppressive medications",
+        "Wound care and dressings",
+        "Biologic therapies"
+    ]
+}

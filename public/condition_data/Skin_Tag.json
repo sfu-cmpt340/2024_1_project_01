@@ -1,0 +1,20 @@
+{
+    "description": "Skin tags are small, soft, skin-colored growths that hang off the skin. They are usually harmless and painless.",
+    "possible causes": [
+        "Friction from skin rubbing against skin",
+        "Genetics",
+        "Hormonal changes",
+        "Obesity"
+    ],
+    "symptoms": [
+        "Small, soft, flesh-colored growths on the skin",
+        "May be slightly raised",
+        "Usually painless"
+    ],
+    "treatments": [
+        "No treatment necessary if not bothersome",
+        "Cryotherapy (freezing)",
+        "Surgical removal",
+        "Ligation (tying off the blood supply)"
+    ]
+}

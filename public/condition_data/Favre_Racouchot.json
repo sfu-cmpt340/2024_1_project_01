@@ -1,0 +1,18 @@
+{
+    "description": "Favre-Racouchot is a skin condition characterized by solar elastosis and comedones, commonly found on sun-exposed areas of the face.",
+    "possible causes": [
+        "Prolonged sun exposure",
+        "Aging",
+        "Genetic predisposition"
+    ],
+    "symptoms": [
+        "Open comedones (blackheads)",
+        "Yellowish cysts",
+        "Thickened, yellowish skin"
+    ],
+    "treatments": [
+        "Topical retinoids",
+        "Chemical peels",
+        "Laser therapy"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Keratoacanthoma is a type of skin tumor that usually appears as a dome-shaped, flesh-colored growth with a central crater filled with keratin. It typically grows rapidly and may resemble a squamous cell carcinoma.",
+    "possible causes": [
+        "Excessive sun exposure",
+        "Genetic factors",
+        "Immune system suppression"
+    ],
+    "symptoms": [
+        "Rapidly growing bump on the skin",
+        "Central crater filled with keratin",
+        "Painless lump that may bleed or crust over"
+    ],
+    "treatments": [
+        "Surgical removal",
+        "Cryotherapy",
+        "Topical medications"
+    ]
+}

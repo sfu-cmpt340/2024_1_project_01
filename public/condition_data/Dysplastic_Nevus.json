@@ -1,0 +1,16 @@
+{
+    "description": "Dysplastic Nevus, also known as atypical mole, is a common mole that may resemble melanoma. It is usually larger than a normal mole, irregular in shape, and can have uneven coloration.",
+    "possible causes": [
+        "Genetic factors",
+        "Excessive sun exposure"
+    ],
+    "symptoms": [
+        "Irregular shape",
+        "Uneven coloration",
+        "Larger size than normal moles"
+    ],
+    "treatments": [
+        "Regular monitoring by a dermatologist",
+        "Surgical removal if necessary"
+    ]
+}

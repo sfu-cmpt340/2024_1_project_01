@@ -1,0 +1,17 @@
+{
+    "description": "Congenital nevus is a type of mole that is present at birth or appears shortly after birth. These moles are usually larger in size and may have a darker color compared to common moles.",
+    "possible causes": [
+        "Genetic factors",
+        "Mutations in skin cells"
+    ],
+    "symptoms": [
+        "Large, dark-colored mole present at birth",
+        "Hair growth on the mole",
+        "Changes in size or color over time"
+    ],
+    "treatments": [
+        "Monitoring for changes in the mole",
+        "Surgical removal if necessary",
+        "Cosmetic procedures for aesthetic concerns"
+    ]
+}

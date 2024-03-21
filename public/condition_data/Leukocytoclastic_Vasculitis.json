@@ -1,0 +1,21 @@
+{
+    "description": "Leukocytoclastic Vasculitis is a type of blood vessel inflammation characterized by the presence of small red or purple spots on the skin. It is caused by the immune system attacking blood vessels, leading to symptoms such as rash, itching, and pain.",
+    "possible causes": [
+        "Autoimmune disorders",
+        "Infections",
+        "Medications",
+        "Underlying diseases"
+    ],
+    "symptoms": [
+        "Skin rash",
+        "Itching",
+        "Pain or tenderness in affected areas",
+        "Swelling"
+    ],
+    "treatments": [
+        "Corticosteroids",
+        "Immunosuppressants",
+        "Antihistamines",
+        "Pain relievers"
+    ]
+}
