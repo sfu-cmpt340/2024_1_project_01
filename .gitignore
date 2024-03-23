@@ -16,6 +16,7 @@ dist-ssr
 # Python
 venv
 api/model
+*.keras
 
 # Editor directories and files
 .vscode/*
