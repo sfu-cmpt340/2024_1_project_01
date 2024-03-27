@@ -1,5 +1,9 @@
 import useSWR from 'swr'
 
+import Image from '@/components/Image'
+import { Alert } from '@mantine/core';
+import { IconAlertTriangle } from '@tabler/icons-react';
+
 interface ConditionCardProps {
     probability: number;
     condition: string;
@@ -71,14 +75,19 @@ const ConditionCard: React.FC<ConditionCardProps> = ({ probability, condition })
                             </ul>
                         </div>
                     </div>
-                    : <div>
-                        Information on this condition could not be loaded.
-                    </div>
+                    : <Alert
+                        className="font-Inter text-white my-4 w-full h-1/4"
+                        variant="filled"
+                        color="#DB5461"
+                        title="Error"
+                        icon={ <IconAlertTriangle className="text-white" />}
+                    >
+                        <p className="font-Inter text-white text-justify">
+                          The information for this condition could not be loaded.
+                        </p>
+                    </Alert>
                 }
-                <img 
-                    className="shrink-0 w-[320px] h-[240px] ml-auto" 
-                    src={`/condition_images/${condition}.jpg`} 
-                />
+                <Image src={`/condition_images/${condition}.jpg`} />
             </div>
         </div>
     );
