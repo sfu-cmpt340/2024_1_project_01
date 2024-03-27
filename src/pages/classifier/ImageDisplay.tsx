@@ -1,7 +1,7 @@
-import { Button, Loader } from '@mantine/core'
+import { Alert, Button, Loader } from '@mantine/core'
 import { useState } from 'react'
 import { NavigateFunction, useNavigate } from 'react-router-dom'
-import { IconSearch, IconTrash } from '@tabler/icons-react'
+import { IconAlertTriangle, IconSearch, IconTrash } from '@tabler/icons-react'
 
 import Result from '@/classes/Result'
 import ResultsDB from '@/classes/ResultsDB'
@@ -17,6 +17,7 @@ interface ImageDisplayProps {
 // PARAM: image - The user's submitted image to be classified.
 //        setImage - Setter from Home that allows users to remove their provided image.
 const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
+    const [error, setError] = useState<boolean>(false);
     const [loading, setLoading] = useState<boolean>(false);
     
     const navigate: NavigateFunction = useNavigate();
@@ -24,6 +25,19 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
     return (
         <div className="flex justify-center">
             <div className="flex flex-col gap-2">
+                {error && 
+                    <Alert
+                        className="font-Inter text-white my-4"
+                        variant="filled"
+                        color="#DB5461"
+                        title="Error"
+                        icon={ <IconAlertTriangle className="text-white" />}
+                    >
+                        <p className="font-Inter text-white text-justify">
+                            The image you submitted was could not be classified. Please try again later.
+                        </p>
+                    </Alert>
+                }
                 <img className="h-[480px] w-[640px]" src={image} /> 
                 {!loading
                     ? <div className="flex place-content-center gap-8 m-4">
@@ -48,6 +62,7 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
                             radius="md"
                             leftSection={<IconSearch className="text-white" size="32" />}
                             onClick={() => {
+                                setError(false);
                                 setLoading(true);
                                 classifyImage(image)
                                     .then((res: JSON) => {
@@ -68,7 +83,7 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
                                         // redirect
                                         navigate(`/diagnosis/${diagnosis.datetime}`);
                                     })
-                                    .catch(() => console.log('error'))
+                                    .catch(() => setError(true))
                                     .finally(() => setLoading(false));
                             }}
                         >
