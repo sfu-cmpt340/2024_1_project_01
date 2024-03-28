@@ -31,6 +31,14 @@ const PreviousDiagnoses: React.FC = () => {
     }, [update]);
     // update is 'modified' in the diagnosis card whenever a diagnosis is deleted 
     
+    // scrolls to top of page when paginator is updated
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, [page]);
+
     // sort results by most recent then generates diagnosis cards depending on the page
     const diagnoses: JSX.Element[] = results
         .sort((a: Result, b: Result): number => b.datetime - a.datetime)

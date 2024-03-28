@@ -25,17 +25,7 @@ const DiagnosisCard: React.FC<DiagnosisCardProps> = ({ diagnosis, setUpdate }) =
     const condition1: [string, number] = conditionIter.next().value;
     const condition2: [string, number] = conditionIter.next().value;
     const condition3: [string, number] = conditionIter.next().value;
-    const other: number = (() => {
-        // add up probabilties of all other conditions
-        let other: number = 0;
-        let condition: [string, number] = conditionIter.next().value;
-        while(condition) {
-            other += condition[1];
-            condition = conditionIter.next().value;
-        }
-
-        return other;
-    })();
+    const other: number = 100 - condition1[1] - condition2[1] - condition3[1];
 
     return (
         <div className="flex flex-col border-4 border-grey rounded-md font-Inter font-bold text-black">
