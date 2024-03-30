@@ -44,8 +44,8 @@ const Diagnosis: React.FC = () => {
         <div className="min-w-screen min-h-screen bg-white font-Inter">
             <Header />
             <div className="bg-blue text-white">
-                <div className="flex flex-col mx-[15rem] py-16">
-                    <p className="font-bold text-2xl">
+                <div className="flex flex-col mx-4 md:mx-20 lg:mx-40 xl:mx-60 py-8 md:py-16">
+                    <p className="font-bold text-2xl text-center md:text-left">
                         {date.toLocaleString('en-us', { 
                             hour: 'numeric', 
                             minute: 'numeric' })
@@ -55,7 +55,7 @@ const Diagnosis: React.FC = () => {
                             year: 'numeric' 
                         })}
                     </p>
-                    <div className="flex gap-8">
+                    <div className="flex flex-col lg:flex-row gap-4 md:gap-8 items-center lg:items-start">
                         <div className="flex flex-col">
                             <p className="text-justify">
                                 Based on your provided image, the following skin conditions were detected using our model.
@@ -76,12 +76,12 @@ const Diagnosis: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col mx-[15rem] my-[4.5rem] gap-10">
+            <div className="flex flex-col mx-4 md:mx-20 lg:mx-40 xl:mx-60 my-16 gap-4 md:gap-10">
                 {conditions}
             </div>
-            <div className="flex justify-end mx-[15rem] py-8">
+            <div className="flex justify-end mx-4 md:mx-20 lg:mx-40 xl:mx-60 py-8">
                 <Button
-                    className="w-[25%]"
+                    className="w-full md:w-[40%] lg:w-[25%]"
                     variant="filled"
                     color="#DB5461"
                     size="lg"

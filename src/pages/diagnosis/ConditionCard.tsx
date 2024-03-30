@@ -45,10 +45,10 @@ const ConditionCard: React.FC<ConditionCardProps> = ({ probability, condition })
 
     return (
         <div className="flex flex-col font-Inter">
-            <p className="text-xl font-bold">
+            <p className="text-xl font-bold py-4 lg:py-0">
                 {condition.replace(/_/g, ' ')} - {probability.toFixed(2)}%
             </p>
-            <div className="flex gap-8">
+            <div className="flex flex-col-reverse lg:flex-row gap-8 items-center lg:items-start">
                 {!error
                     ? <div className="flex flex-col">
                         <p className="text-justify">
