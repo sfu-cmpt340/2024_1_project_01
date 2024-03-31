@@ -12,7 +12,7 @@ const Classifier: React.FC = () => {
         <div className="min-w-screen min-h-screen bg-white">
             <Header />
             {!image 
-                ? <div className="py-24">
+                ? <div className="py-16 md:py-24">
                     <ImageInput setImage={setImage} />
                 </div>
                 : <div className="py-8">

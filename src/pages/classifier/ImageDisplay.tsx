@@ -24,25 +24,25 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
 
     return (
         <div className="flex justify-center">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 px-4 md:px-0">
                 {error && 
                     <Alert
-                        className="font-Inter text-white my-4"
+                        className="w-[320px] md:w-[560px] font-Inter text-white my-4"
                         variant="filled"
                         color="#DB5461"
                         title="Error"
                         icon={ <IconAlertTriangle className="text-white" />}
                     >
                         <p className="font-Inter text-white text-justify">
-                            The image you submitted was could not be classified. Please try again later.
+                            The image you submitted could not be classified. Please try again later.
                         </p>
                     </Alert>
                 }
-                <img className="h-[480px] w-[640px]" src={image} /> 
+                <img className="h-[240px] md:h-[420px] w-[320px] md:w-[560px]" src={image} /> 
                 {!loading
-                    ? <div className="flex place-content-center gap-8 m-4">
+                    ? <div className="flex flex-col md:flex-row place-content-center gap-8 my-4 mx-0 md:mx-4">
                         <Button
-                            className="w-[35%]"
+                            className="w-full md:w-[35%]"
                             variant="filled"
                             color="#DB5461"
                             size="lg"
@@ -55,7 +55,7 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({ image, setImage }) => {
                             </p>
                         </Button>
                         <Button
-                            className="w-[35%]"
+                            className="w-full md:w-[35%]"
                             variant="filled"
                             color="#3943B7"
                             size="lg"

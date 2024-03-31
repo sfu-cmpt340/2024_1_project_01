@@ -18,11 +18,11 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
     const webcamRef = useRef<any>(null);
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center p-6 md:p-0">
             {!useCamera
                 ? <div className="flex flex-col place-items-center font-Inter border-grey border-4 border-dashed">
                     <Dropzone
-                        className="px-20 py-14"
+                        className="px-10 md:px-20 py-8 md:py-14"
                         onDrop={(file: FileWithPath[]) => {
                             // read image and save it in base64
                             const reader: FileReader = new FileReader();
@@ -33,20 +33,21 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                         }}
                         accept={IMAGE_MIME_TYPE}
                     >
-                        <div className="flex items-center gap-2 text-black">
+                        <div className="flex flex-col md:flex-row items-center gap-2 text-black text-center">
                             <IconPhoto size="48" /> 
                             Drag an image here or click to select a file
                         </div>
                     </Dropzone>
-                    <div className="flex w-full items-center justify-center gap-1 text-grey text-xs">
-                        <Progress className="w-[45%]" size="1" color="#CED3DC" value={100} />
+                    <div className="flex w-full items-center justify-center gap-1 text-grey text-xs px-2 md:px-4">
+                        <Progress className="w-full" size="1" color="#CED3DC" value={100} />
                         OR
-                        <Progress className="w-[45%]" size="1" color="#CED3DC" value={100} />
+                        <Progress className="w-full" size="1" color="#CED3DC" value={100} />
                     </div>
-                    <div className="flex justify-center gap-4 w-full px-2 py-10">
-                        <div ref={ref} className="w-[45%]">
+                    <div className="flex flex-col md:flex-row justify-center gap-4 w-full px-2 py-4 md:py-10">
+                        <div ref={ref} className="w-full md:w-[45%]">
                             {!focused
                                 ? <Button
+                                    className="w-full"
                                     variant="default"
                                     size="lg"
                                     radius="md"
@@ -80,7 +81,7 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                             }
                         </div>
                         <Button
-                            className="w-[45%]"
+                            className="w-full md:w-[45%]"
                             variant="default"
                             size="lg"
                             radius="md"
@@ -93,7 +94,7 @@ const ImageInput: React.FC<ImageInputProps> = ({ setImage }) => {
                         </Button>
                     </div>
                 </div>
-                : <div className="relative z-0 -m-8">
+                : <div className="h-[240px] md:h-[420px] w-[320px] md:w-[560px] relative z-0 -m-8">
                     <Webcam
                         ref={webcamRef}
                         screenshotFormat="image/jpeg"
