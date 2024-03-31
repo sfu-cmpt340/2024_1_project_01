@@ -10,18 +10,18 @@ const Error: React.FC = () => {
 
     return (
         <>
-            <div className="h-screen w-screen bg-white relative">
+            <div className="h-screen w-screen bg-white">
                 <Header />
-                <div className="w-full flex flex-col font-Inter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 gap-8 text-center">
+                <div className="w-full flex flex-col font-Inter gap-8 text-center p-6 lg:p-0 my-14 lg:my-40">
                     <p className="font-bold text-blue text-[7rem] -my-10">
                         404
                     </p>
                     <p className="text-black">
                         An unexpected error has occured and the page you were looking for could not be found.
                     </p>
-                    <div className="flex gap-12 place-content-center">
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-12 place-content-center">
                         <Button
-                            className="w-[12.5%]"
+                            className="w-full lg:w-1/4 xl:w-[15%]"
                             variant="filled"
                             color="#3943B7"
                             size="lg"
@@ -35,7 +35,7 @@ const Error: React.FC = () => {
                             </p>
                         </Button>
                         <Button
-                            className="w-[12.5%]"
+                            className="w-full lg:w-1/4 xl:w-[15%]"
                             variant="filled"
                             color="#DB5461"
                             size="lg"
