@@ -6,6 +6,7 @@ import { createTheme, MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css'
 import '@/styles.css'
 
+import About from '@/pages/about/index'
 import Classifier from '@/pages/classifier/index'
 import Diagnosis from '@/pages/diagnosis/index'
 import Error from '@/pages/error/index'
@@ -32,7 +33,8 @@ const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
         element: <Diagnosis />
     },
     {
-        path: '/about'
+        path: '/about',
+        element: <About />
     },
     {
         path: '*',
