@@ -1,8 +1,5 @@
-# SFU CMPT 340 Project Template -- Replace with project title
-This repository is a template for your CMPT 340 course project.
-Replace the title with your project title, and **add a snappy acronym that people remember (mnemonic)**.
-
-Add a 1-2 line summary of your project here.
+# SFU CMPT 340 Project 1: Skintector
+In this project, we trained 6 classification models on SD-198, a dataset consisted of 6584 images of 198 skin diseases. The base model is EfficientNetV2M pretrained on ImageNet. We built and hosted a web application that leverages the best model.
 
 ## Important Links
 
@@ -20,69 +17,89 @@ Record a short video (1:40 - 2 minutes maximum) or gif or a simple screen record
 
 
 ## Table of Contents
-1. [Demo](#demo)
+1. [Installation](#install)
 
-2. [Installation](#installation)
+2. [Demo](#demo)
 
 3. [Reproducing this project](#repro)
 
 4. [Guidance](#guide)
 
+<a name="install"></a>
 
-<a name="demo"></a>
-## 1. Example demo
-
-A minimal example to showcase your work
-
-```python
-from amazing import amazingexample
-imgs = amazingexample.demo()
-for img in imgs:
-    view(img)
+## 1. Installation
+a. Download NPM at [official Node.js website](https://nodejs.org/en). <br>
+b. Download Python version 3.11 at [official Python website](https://www.python.org/). <br>
+c. Install required NPM packages
+```bash
+npm install
+```
+d. Create a new Python virtual environment
+```bash
+python3 -m venv venv
+```
+c. Activate the virtual environment 
+```bash
+source venv/bin/activate
+```
+d. Install packages required to run the model
+```bash
+pip install -r api/requirements.txt
 ```
 
-### What to find where
+<a name="demo"></a>
 
-Explain briefly what files are found where
+## 2. Demo
+a. Run the website in developer mode
+```bash
+npm run dev
+```
+b. Start the Flask server in another terminal
+```bash
+python3 ./api/main.py
+```
+
+Alternatively, you can try out the model using Tkinter app (results displayed in terminal)
+```bash
+python3 ./api/demo.py
+```
+
+### Directory Structure
 
 ```bash
 repository
-├── src                          ## source code of the package itself
-├── scripts                      ## scripts, if needed
-├── docs                         ## If needed, documentation   
-├── README.md                    ## You are here
-├── requirements.yml             ## If you use conda
-```
-
-<a name="installation"></a>
-
-## 2. Installation
-
-Provide sufficient instructions to reproduce and install your project. 
-Provide _exact_ versions, test on CSIL or reference workstations.
-
-```bash
-git clone $THISREPO
-cd $THISREPO
-conda env create -f requirements.yml
-conda activate amazing
+├── /api/                               
+    ├── /model/                         ## Contains the Tensorflow serving model
+    ├── /training/                      ## Contains the training scripts and the dataset
+    ├── main.py                         ## Contains code for the Flask server
+    ├── requirements.txt                ## Contains dependencies for Tkinter app and Flask server
+├── /dist/                              ## Compiled code for the website in JavaScript
+├── /node_modules/                      ## Contains the packages for the project
+├── /public/                            ## Contains images and information on each condition
+├── /src/                               ## Source code for the website in TypeScript
+    ├── /classes/                                 
+    ├── /components/                    
+    ├── /pages/                         
+    ├── /styles.css                     
+    ├── main.tsx                                   
+├── index.html                          ## Loads code for React components
+├── package.json, package-lock.json     ## Used for automatically installing packages from npm
+├── tsconfig.json, tsconfig.node.json   ## Configuration files for TypeScript
 ```
 
 <a name="repro"></a>
-## 3. Reproduction
-Demonstrate how your work can be reproduced, e.g. the results in your report.
-```bash
-mkdir tmp && cd tmp
-wget https://yourstorageisourbusiness.com/dataset.zip
-unzip dataset.zip
-conda activate amazing
-python evaluate.py --epochs=10 --data=/in/put/dir
-```
-Data can be found at ...
-Output will be saved in ...
+
+## 3. Reproducing this project
+Download the dataset at [Google Drive link]()
+
+Jyputer notebook `./api/training/train_model_{i}.ipynb` contains the code to train and evaluate the i<sup>th</sup> model, specifically the code in the third section "Train the model with both train and validation"
+
+Each notebook contains training progress of one of the final model's previous training run (except for notebook 3, whose training progress output was accidentally cleared). You can see the model's performance on the test set in the last code block.
+
+Jyputer notebook `./api/training/export_serving_mode.ipynb` contains the code to export each of the model to Tensorflow serving model for inference.
 
 <a name="guide"></a>
-## 4. Guidance
+## Guidance
 
 - Use [git](https://git-scm.com/book/en/v2)
     - Do NOT use history re-editing (rebase)

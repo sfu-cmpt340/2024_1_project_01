@@ -1,8 +1,9 @@
+import json
 from base64 import b64decode
+
+import tensorflow as tf
 from flask import Flask, request
 from flask_cors import CORS
-import json
-import tensorflow as tf
 
 # Setup Flask
 app = Flask(__name__)
@@ -19,6 +20,7 @@ labels = None
 with open("./api/labels.txt", "r") as file:
     labels = [line for line in file]
 print("Labels loaded!")
+
 
 @app.route("/classify", methods=["POST"])
 def classify() -> json:
@@ -42,11 +44,12 @@ def classify() -> json:
     top_predictions = {
         str(labels[i]): float(predictions[i] * 100) for i in sorted_indices
     }
-
     print("Predictions made!")
-    print(top_predictions)
+    for condition, probability in top_predictions.items():
+        print(f"{condition.strip()}: {(probability):.2f}%")
 
     return top_predictions
+
 
 if __name__ == "__main__":
     app.run()
