@@ -50,18 +50,14 @@ pip install -r api/requirements.txt
 <a name="demo"></a>
 
 ## 2. Demo
-a. Run the website in developer mode
+a. Download the model at [Google Drive link]() <br>
+b. Run the website in developer mode
 ```bash
 npm run dev
 ```
-b. Start the Flask server in another terminal
+c. Start the Flask server in another terminal
 ```bash
 python3 ./api/main.py
-```
-
-Alternatively, you can try out the model using Tkinter app (results displayed in terminal)
-```bash
-python3 ./api/demo.py
 ```
 
 ### Directory Structure
