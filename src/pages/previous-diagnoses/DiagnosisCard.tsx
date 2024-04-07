@@ -40,7 +40,7 @@ const DiagnosisCard: React.FC<DiagnosisCardProps> = ({ diagnosis, setUpdate }) =
                 })}
             </p>
             <div className="flex flex-col md:flex-row mx-6 mb-4 items-center md:items-stretch">
-                <img className="w-[240px] h-[180px]" src={diagnosis.image} />
+                <img className="shrink-0 w-[240px] h-[180px]" src={diagnosis.image} />
                 <div className="w-full flex flex-col md:ml-6 items-center">
                     <Progress.Root 
                         className="w-[80%] md:w-full my-4 md:my-0"
