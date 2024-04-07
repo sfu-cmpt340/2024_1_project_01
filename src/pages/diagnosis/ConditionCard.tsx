@@ -48,9 +48,9 @@ const ConditionCard: React.FC<ConditionCardProps> = ({ probability, condition })
             <p className="text-xl font-bold py-4 lg:py-0">
                 {condition.replace(/_/g, ' ')} - {probability.toFixed(2)}%
             </p>
-            <div className="flex flex-col-reverse lg:flex-row gap-8 items-center lg:items-start">
+            <div className="flex flex-col-reverse lg:flex-row gap-8 items-center lg:items-start place-content-between">
                 {!error
-                    ? <div className="flex flex-col">
+                    ? <div className="grow flex flex-col">
                         <p className="text-justify">
                             {!isLoading && data['description']}
                         </p>

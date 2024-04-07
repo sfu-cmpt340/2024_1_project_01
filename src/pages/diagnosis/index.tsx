@@ -90,10 +90,10 @@ const Diagnosis: React.FC = () => {
                     onClick={() => {
                         // delete diagnosis from database
                         const db: ResultsDB = new ResultsDB();
-                        db.results.delete(datetime)
+                        db.results.delete(datetime);
 
                         // redirect to previous diagnosis page
-                        navigate('/previous-diagnosis')
+                        navigate('/previous-diagnoses');
                     }}
                 >
                     <p className="font-Inter font-bold text-white text-xl">

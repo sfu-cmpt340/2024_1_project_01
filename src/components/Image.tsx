@@ -22,12 +22,12 @@ const Image: React.FC<ImageProps> = ({ src }) => {
     }, []);
 
     return (
-        <div className='shrink-0 relative w-[320px] h-[240px]'>
+        <div className='shrink-0 relative'>
             <div className={`${hidden === 'false' && 'opacity-0 hover:opacity-100'}`}>
                 <div className="w-full h-full flex flex-col absolute z-20 font-Inter place-items-center place-content-center p-4 gap-2">
                     {hidden === 'true' &&
                         <>
-                            <div className="flex text-white text-2xl font-bold items-center gap-2">
+                            <div className="flex text-white text-xl md:text-2xl font-bold items-center gap-2">
                                 <IconEyeOff size="42" />
                                 Sensitive Content
                             </div>
