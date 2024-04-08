@@ -4,6 +4,8 @@ import keras
 import tensorflow as tf
 from utils import input_preprocess
 
+keras.utils.set_random_seed(42)
+
 
 ## Define test set loader
 def load_test_set(image_size, batch_size):
