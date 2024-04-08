@@ -70,7 +70,7 @@ The required packages will be installed to `/node_modules/`.
 <a name="repro"></a>
 ## 3. Reproduction
 
-### Training and evaluattion
+### Training and evaluation
 The project uses a modified version of SD-198, where every bottom caption have been cropped out to prevent corrupting features the model learns. Download it [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and place inside `/api/training/`.
 
 To train one of the 6 models mentioned in the report, use
@@ -79,7 +79,7 @@ python ./api/training/train_model.py -m [model_number]
 ```
 The model will be saved at `./api/training/models/model_[model_number].keras`
 
-To evaluate the i<sup>th</sup> model, use
+To evaluate a model, use
 ```bash
 python ./api/training/evaluate_model.py -m [model_number]
 ```
