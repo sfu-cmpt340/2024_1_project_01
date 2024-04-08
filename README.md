@@ -64,7 +64,7 @@ To install the back-end dependencies, use
 pip install -r api/requirements.txt
 ```
 
-It is recommended to install both dependencies for back-end and training scripts in a [venv](https://docs.python.org/3/library/venv.html) so they will not interfere with pre-existing libraries you may already have.
+It is recommended to install dependencies for both back-end and training scripts in a [venv](https://docs.python.org/3/library/venv.html) so they will not interfere with pre-existing libraries you may already have.
 
 ### Front-End
 The front-end requires the installation of [Node.js](https://nodejs.org/en) (tested on v16.17.0).
