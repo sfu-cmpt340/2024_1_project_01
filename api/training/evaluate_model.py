@@ -10,7 +10,7 @@ keras.utils.set_random_seed(42)
 ## Define test set loader
 def load_test_set(image_size, batch_size):
     test_ds = keras.utils.image_dataset_from_directory(
-        "./sd198/test",
+        "./api/training/sd198/test",
         image_size=image_size,
         batch_size=batch_size,
     )
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     )
 
     ## Load the model
-    model = keras.saving.load_model(f"./models/model_{args.model}.keras")
+    model = keras.saving.load_model(f"./api/training/models/model_{args.model}.keras")
 
     ## Evaluate the model
     results = model.evaluate(test_ds, return_dict=True)
