@@ -1,9 +1,8 @@
-import json
 from base64 import b64decode
-
-import tensorflow as tf
 from flask import Flask, request
 from flask_cors import CORS
+import json
+import tensorflow as tf
 
 # Setup Flask
 app = Flask(__name__)
@@ -11,16 +10,17 @@ CORS(app)
 
 # Load EfficientNetV2M trained on SD-198
 print("Loading model...")
-serving_model = tf.saved_model.load("./api/model")
+serving_model = tf.saved_model.load("./model")
 print("Model loaded!")
 
 # Load labels
 print("Loading labels...")
 labels = None
-with open("./api/labels.txt", "r") as file:
+with open("./labels.txt", "r") as file:
     labels = [line for line in file]
 print("Labels loaded!")
 
+print("Server is ready!")
 
 @app.route("/classify", methods=["POST"])
 def classify() -> json:
@@ -50,6 +50,5 @@ def classify() -> json:
 
     return top_predictions
 
-
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
