@@ -129,7 +129,7 @@ The rest of the following commands must be run in `/api/`.
 
 To run the back-end in development mode, use
 ```bash
-python ./api/main.py
+python api/main.py
 ```
 The API will be accessible at http://127.0.0.1:5000 or http://localhost:5000.
 
