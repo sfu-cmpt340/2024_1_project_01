@@ -4,18 +4,21 @@ import keras
 import tensorflow as tf
 from utils import input_preprocess
 
+#Setting seed to ensure reproducibility
 keras.utils.set_random_seed(42)
 
 
 ## Define test set loader
 def load_test_set(image_size, batch_size):
+    #Loading images from the test set
     test_ds = keras.utils.image_dataset_from_directory(
         "./api/training/sd198/test",
         image_size=image_size,
         batch_size=batch_size,
     )
-
+    #Preprocessing the images
     test_ds = test_ds.map(input_preprocess, num_parallel_calls=tf.data.AUTOTUNE)
+    #Prefetching data
     test_ds = test_ds.prefetch(buffer_size=tf.data.AUTOTUNE)
 
     return test_ds
