@@ -58,6 +58,8 @@ pip install -r api/requirements.txt
 ```
 It is recommended to install the dependencies in a [venv](https://docs.python.org/3/library/venv.html) so they will not interfere with pre-existing libraries you may already have.
 
+If you want to train the models, it is also recommended to install Tensorflow with CUDA instead. More information at [official website](https://www.tensorflow.org/install/pip)
+
 ### Front-End
 The front-end requires the installation of [Node.js](https://nodejs.org/en) (tested on v16.17.0).
 
