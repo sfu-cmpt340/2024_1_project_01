@@ -11,7 +11,7 @@ if __name__ == "__main__":
     argparser.add_argument("--model", "-m", type=int, required=True)
     args = argparser.parse_args()
 
-    model = keras.models.load_model(f"./models/model_{args.model}.keras")
+    model = keras.models.load_model(f"./api/training/models/model_{args.model}.keras")
 
     export_archive = keras.export.ExportArchive()
     export_archive.track(model)
@@ -20,4 +20,4 @@ if __name__ == "__main__":
         fn=model.call,
         input_signature=[tf.TensorSpec(shape=(None, 480, 480, 3), dtype=tf.float32)],
     )
-    export_archive.write_out(f"./models/model_{args.model}")
+    export_archive.write_out(f"./api/training/models/model_{args.model}")

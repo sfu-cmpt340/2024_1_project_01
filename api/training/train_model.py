@@ -44,13 +44,13 @@ def plot_hist(hist, plot_val=False):
 ## Define train set loader
 def load_train_set(image_size, batch_size, augmentation):
     train_ds = keras.utils.image_dataset_from_directory(
-        "./sd198/train",
+        "./api/training/sd198/train",
         image_size=image_size,
         batch_size=batch_size,
     )
 
     test_ds = keras.utils.image_dataset_from_directory(
-        "./sd198/test",
+        "./api/training/sd198/test",
         image_size=image_size,
         batch_size=batch_size,
     )
