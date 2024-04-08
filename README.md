@@ -58,8 +58,6 @@ pip install -r api/requirements.txt
 ```
 It is recommended to install the dependencies in a [venv](https://docs.python.org/3/library/venv.html) so they will not interfere with pre-existing libraries you may already have.
 
-If you want to train the models, it is also recommended to install Tensorflow with CUDA instead. More information at [official website](https://www.tensorflow.org/install/pip)
-
 ### Front-End
 The front-end requires the installation of [Node.js](https://nodejs.org/en) (tested on v16.17.0).
 
@@ -73,6 +71,8 @@ The required packages will be installed to `/node_modules/`.
 ## 3. Reproduction
 
 ### Training and evaluation
+The project uses `keras` and `keras_cv` library. Keras however requires another library as its backend, `jax`, `tensorflow`, or `torch`. We recommend [jax](https://jax.readthedocs.io/en/latest/installation.html) or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. Please install the backend before installing [`keras`](https://keras.io/getting_started/) and [`keras_cv`](https://keras.io/getting_started/)
+
 The project uses a modified version of SD-198, where every bottom caption have been cropped out to prevent corrupting features the model learns. Download it [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and place inside `/api/training/`.
 
 To train one of the 6 models mentioned in the report, use
