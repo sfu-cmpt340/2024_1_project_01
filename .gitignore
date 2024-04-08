@@ -18,6 +18,8 @@ dist-ssr
 venv
 api/model
 *.keras
+api/training/models
+api/training/sd198
 
 # Editor directories and files
 .vscode/*

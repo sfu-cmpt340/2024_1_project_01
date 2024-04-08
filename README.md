@@ -70,10 +70,33 @@ The required packages will be installed to `/node_modules/`.
 <a name="repro"></a>
 ## 3. Reproduction
 
-### Training the Model
-This step may be skipped as a pre-trained model is provided in the repo at `/api/model/`. Otherwise, our model is trained on a modified version of SD-198 which can be downloaded [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and placed in `/api/training/`. 
+### Training and evaluattion
+The project uses a modified version of SD-198, where every bottom caption have been cropped out to prevent corrupting features the model learns. Download it [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and place inside `/api/training/`.
 
-...
+To train one of the 6 models mentioned in the report, use
+```bash
+python ./api/training/train_model.py -m [model_number]
+```
+The model will be saved at `./api/training/models/model_[model_number].keras`
+
+To evaluate the i<sup>th</sup> model, use
+```bash
+python ./api/training/evaluate_model.py -m [model_number]
+```
+
+### Inference
+Our website runs a Tensorflow serving model. There are 3 options: 
+
+You can use the Tensorflow serving model provided in the repo `api/model/`, which means you can skip to the next step.
+
+Or you can export one of your trained models at `api/training/models` as a Tensorflow serving model, using
+```bash
+python ./api/training/export_serving_model.py -m [model_number]
+```
+The serving model will be saved at `api/training/models/model_[model_number]/`. Move and rename it to `api/model/`.
+
+Or you can download one of our Tensorflow serving models [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing). The folder `/models/` contains the trained models `/models/model_[model_number].keras` and their corresponding serving models `/models/model_[model_number]/`. Move and rename it to `api/model/`.
+
 
 ### Back-End
 To run the back-end in development mode, use
