@@ -96,12 +96,24 @@ def load_model(
         else:
             layer.trainable = False
 
+    #adds GlobalAveragePooling2D layer to the model, 
+    #which computes the average of its input values over the spatial dimensions
     x = keras.layers.GlobalAveragePooling2D()(base_model.output)
+
+    #Adds BatchNormalization layer to the model which normalizes the 
+    #input layer by adjusting and scaling the activations
     x = keras.layers.BatchNormalization()(x)
+
+    #Adds Dropout layer to the model, which randomly sets input units to 0
+    #with a frequency of rate at each step during training time
     x = keras.layers.Dropout(rate=0.5)(x)
+
+
     outputs = keras.layers.Dense(units=num_classes, activation="softmax")(x)
 
     model = keras.Model(inputs, outputs, name="EfficientNet")
+
+    #Compiles the model with the AdamW optimizer
     model.compile(
         optimizer=keras.optimizers.AdamW(
             learning_rate=keras.optimizers.schedules.CosineDecayRestarts(
