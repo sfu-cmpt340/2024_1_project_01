@@ -7,9 +7,9 @@ The front-end was built using [React](https://react.dev/), styled using [Tailwin
 [![Skintector Demo Video](https://img.youtube.com/vi/CnpN-qIJ_VI/0.jpg)](https://www.youtube.com/watch?v=CnpN-qIJ_VI)
 
 ## Table of Contents
-1. [Demo](#demo)
+1. [Installation](#install)
 
-2. [Installation](#installation)
+2. [Demo](#demo)
 
 3. [Reproducing this project](#repro)
 
