@@ -8,7 +8,9 @@ import tensorflow as tf
 
 if __name__ == "__main__":
     argparser = argparse.ArgumentParser()
-    argparser.add_argument("--model", "-m", type=int, required=True)
+    argparser.add_argument(
+        "--model", "-m", type=int, required=True, help="Model number (1-6)"
+    )
     args = argparser.parse_args()
 
     model = keras.models.load_model(f"./api/training/models/model_{args.model}.keras")

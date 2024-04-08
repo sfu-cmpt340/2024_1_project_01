@@ -4,3 +4,4 @@ jax[cuda12_pip]
 tensorflow
 keras
 keras-cv
+matplotlib

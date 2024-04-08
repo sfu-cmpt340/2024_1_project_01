@@ -4,21 +4,21 @@ import keras
 import tensorflow as tf
 from utils import input_preprocess
 
-#Setting seed to ensure reproducibility
+# Setting seed to ensure reproducibility
 keras.utils.set_random_seed(42)
 
 
 ## Define test set loader
 def load_test_set(image_size, batch_size):
-    #Loading images from the test set
+    # Loading images from the test set
     test_ds = keras.utils.image_dataset_from_directory(
         "./api/training/sd198/test",
         image_size=image_size,
         batch_size=batch_size,
     )
-    #Preprocessing the images
+    # Preprocessing the images
     test_ds = test_ds.map(input_preprocess, num_parallel_calls=tf.data.AUTOTUNE)
-    #Prefetching data
+    # Prefetching data
     test_ds = test_ds.prefetch(buffer_size=tf.data.AUTOTUNE)
 
     return test_ds
@@ -27,7 +27,9 @@ def load_test_set(image_size, batch_size):
 ## Main function
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", "-m", type=int, required=True)
+    parser.add_argument(
+        "--model", "-m", type=int, required=True, help="Model number (1-6)"
+    )
     args = parser.parse_args()
 
     # Set hyperparameters

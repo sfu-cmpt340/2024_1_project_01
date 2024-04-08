@@ -63,7 +63,12 @@ If you are on Linux with an Nvidia GPU, you can install the dependencies for the
 pip install -r api/training/requirements.txt
 ```
 
-It is recommended to install dependencies for both training scripts and back-end in separate [venv](https://docs.python.org/3/library/venv.html).
+If you use jax or torch as keras backend, please export environment variable `KERAS_BACKEND` or edit your local config file at `~/.keras/keras.json` to configure your backend. Example:
+```bash
+export KERAS_BACKEND="jax"
+```
+
+It is recommended to install dependencies for both training scripts and back-end in a [Python virtual environment](https://docs.python.org/3/library/venv.html).
 
 ### Back-End
 The back-end requires [Python](https://www.python.org/) (tested on 3.11), [Flask](https://flask.palletsprojects.com/en/3.0.x/installation/), and [tensorflow](https://www.tensorflow.org/install/pip). 

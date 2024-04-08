@@ -49,14 +49,7 @@ def load_train_set(image_size, batch_size, augmentation):
         batch_size=batch_size,
     )
 
-    test_ds = keras.utils.image_dataset_from_directory(
-        "./api/training/sd198/test",
-        image_size=image_size,
-        batch_size=batch_size,
-    )
-
     train_ds = train_ds.map(input_preprocess, num_parallel_calls=tf.data.AUTOTUNE)
-    test_ds = test_ds.map(input_preprocess, num_parallel_calls=tf.data.AUTOTUNE)
 
     train_ds = train_ds.map(to_dict, num_parallel_calls=tf.data.AUTOTUNE)
 
@@ -76,9 +69,8 @@ def load_train_set(image_size, batch_size, augmentation):
     train_ds = train_ds.map(undict, num_parallel_calls=tf.data.AUTOTUNE)
 
     train_ds = train_ds.prefetch(buffer_size=tf.data.AUTOTUNE)
-    test_ds = test_ds.prefetch(buffer_size=tf.data.AUTOTUNE)
 
-    return train_ds, test_ds
+    return train_ds
 
 
 ## Define model loader
@@ -96,24 +88,15 @@ def load_model(
         else:
             layer.trainable = False
 
-    #adds GlobalAveragePooling2D layer to the model, 
-    #which computes the average of its input values over the spatial dimensions
     x = keras.layers.GlobalAveragePooling2D()(base_model.output)
-
-    #Adds BatchNormalization layer to the model which normalizes the 
-    #input layer by adjusting and scaling the activations
     x = keras.layers.BatchNormalization()(x)
-
-    #Adds Dropout layer to the model, which randomly sets input units to 0
-    #with a frequency of rate at each step during training time
     x = keras.layers.Dropout(rate=0.5)(x)
-
 
     outputs = keras.layers.Dense(units=num_classes, activation="softmax")(x)
 
     model = keras.Model(inputs, outputs, name="EfficientNet")
 
-    #Compiles the model with the AdamW optimizer
+    # Compiles the model with the AdamW optimizer
     model.compile(
         optimizer=keras.optimizers.AdamW(
             learning_rate=keras.optimizers.schedules.CosineDecayRestarts(
@@ -140,9 +123,9 @@ def train_model(model, model_number, train_ds, num_epochs):
         train_ds,
         epochs=num_epochs,
         callbacks=[
-            keras.callbacks.BackupAndRestore("./backup"),
+            keras.callbacks.BackupAndRestore("./api/training/backup"),
             keras.callbacks.ModelCheckpoint(
-                filepath=f"./models/model_{model_number}.keras",
+                filepath=f"./api/training/models/model_{model_number}.keras",
                 monitor="loss",
                 save_best_only=True,
             ),
@@ -154,7 +137,9 @@ def train_model(model, model_number, train_ds, num_epochs):
 ## Main function
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", "-m", type=int, required=True)
+    parser.add_argument(
+        "--model", "-m", type=int, required=True, help="Model number (1-6)"
+    )
     args = parser.parse_args()
 
     # Set hyperparameters
