@@ -54,7 +54,7 @@ cd 2024_1_project_01
 ### Training and evaluation
 The training and evaluation scripts require the installation of [Python](https://www.python.org/) (tested on 3.11).
 
-The required libraries are `keras` and `keras_cv`. Keras however requires another library as its backend, `jax`, `tensorflow`, or `torch`. We recommend [jax](https://jax.readthedocs.io/en/latest/installation.html) or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. Please install the backend before installing [`keras`](https://keras.io/getting_started/) and [`keras_cv`](https://keras.io/getting_started/)
+The required libraries are `keras` and `keras_cv`. Keras however requires another library as its backend, `jax`, `tensorflow`, or `torch`. We recommend [jax](https://jax.readthedocs.io/en/latest/installation.html) or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. Please install the backend before installing [keras](https://keras.io/getting_started/) and [keras_cv](https://keras.io/getting_started/)
 
 ### Back-End
 The back-end requires the installation of [Python](https://www.python.org/) (tested on 3.11).
