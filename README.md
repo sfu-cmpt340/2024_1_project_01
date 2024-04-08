@@ -52,19 +52,26 @@ cd 2024_1_project_01
 ```
 
 ### Training and evaluation
-The training and evaluation scripts require the installation of [Python](https://www.python.org/) (tested on 3.11).
+The training and evaluation scripts require [Python](https://www.python.org/) (tested on 3.11), keras, keras_cv. Keras requires another library as its backend, which could be `jax`, `tensorflow`, or `torch`. Additionally, `tensorflow` is needed for data loading functionality.
 
-The required libraries are `keras` and `keras_cv`. Keras however requires another library as its backend, `jax`, `tensorflow`, or `torch`. We recommend [jax](https://jax.readthedocs.io/en/latest/installation.html) or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. Please install the backend before installing [keras](https://keras.io/getting_started/) and [keras_cv](https://keras.io/getting_started/).
+The recommended backends for keras are [jax](https://jax.readthedocs.io/en/latest/installation.html) with CUDA support or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. If you install `jax` or `torch` as keras backend, you also have to install `tensorflow` without CUDA support. Otherwise, install `tensorflow` as keras backend.
+
+Both [keras](https://keras.io/getting_started/) and [keras_cv](https://keras.io/getting_started/) should be installed after installing the backend.
+
+If you are on Linux with an Nvidia GPU, you can install the dependencies for the training scripts using
+```bash
+pip install -r api/training/requirements.txt
+```
+
+It is recommended to install dependencies for both training scripts and back-end in separate [venv](https://docs.python.org/3/library/venv.html).
 
 ### Back-End
-The back-end requires the installation of [Python](https://www.python.org/) (tested on 3.11).
+The back-end requires [Python](https://www.python.org/) (tested on 3.11), [Flask](https://flask.palletsprojects.com/en/3.0.x/installation/), and [tensorflow](https://www.tensorflow.org/install/pip). 
 
 To install the back-end dependencies, use
 ```bash
 pip install -r api/requirements.txt
 ```
-
-It is recommended to install dependencies for both back-end and training scripts in a [venv](https://docs.python.org/3/library/venv.html) so they will not interfere with pre-existing libraries you may already have.
 
 ### Front-End
 The front-end requires the installation of [Node.js](https://nodejs.org/en) (tested on v16.17.0).

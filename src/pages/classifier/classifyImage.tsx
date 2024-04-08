@@ -3,7 +3,9 @@
 // PARAM: image - An image stored in a base64 string.
 //  POST: Returns promise for results from classifying the user's image.
 const classifyImage = async (image: string): Promise<JSON> => {
-    const classifyResult: Promise<JSON> = fetch(`${import.meta.env.VITE_CLASSIFY}/classify`, {
+    const address = import.meta.env.VITE_CLASSIFY || '.'
+
+    const classifyResult: Promise<JSON> = fetch(`${address}/classify`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json; charset=UTF-8'

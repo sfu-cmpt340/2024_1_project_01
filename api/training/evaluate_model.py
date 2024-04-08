@@ -34,7 +34,8 @@ if __name__ == "__main__":
 
     ## Load test set of SD-198
     test_ds = load_test_set(
-        image_size=image_size, batch_size=batch_size, augmentation=args.model
+        image_size=image_size,
+        batch_size=batch_size,
     )
 
     ## Load the model
