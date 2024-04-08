@@ -58,7 +58,7 @@ cd 2024_1_project_01
 ```
 
 ### Training and evaluation
-The training and evaluation scripts require [Python](https://www.python.org/) (tested on 3.11), keras, and keras_cv. Keras requires another library as its backend, which could be jax, tensorflow, or torch. Additionally, tensorflow is needed for data loading functionality and [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
+The training and evaluation scripts require [Python](https://www.python.org/) (tested on 3.11), keras, and keras_cv. Keras requires another library as its backend, which could be jax, tensorflow, or torch. Additionally, tensorflow is needed for data loading functionality and [matplotlib](https://matplotlib.org/stable/users/installing/index.html) is needed to plot training history.
 
 The recommended backends for keras are [jax](https://jax.readthedocs.io/en/latest/installation.html) with CUDA support or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. If you install jax or torch as keras backend, you also have to install tensorflow without CUDA support. Otherwise, install tensorflow as keras backend.
 
