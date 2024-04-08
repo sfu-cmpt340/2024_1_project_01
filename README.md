@@ -71,7 +71,7 @@ The required packages will be installed to `/node_modules/`.
 ## 3. Reproduction
 
 ### Training the Model
-This step may be skipped as a pre-trained model is provided in the repo at `/api/model/`. Otherwise, our model is trained on a modified version of SD-198 which can be downloaded [here]() and placed in `/api/training/`.
+This step may be skipped as a pre-trained model is provided in the repo at `/api/model/`. Otherwise, our model is trained on a modified version of SD-198 which can be downloaded [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and placed in `/api/training/`. 
 
 ...
 
