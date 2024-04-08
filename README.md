@@ -87,9 +87,6 @@ npm install
 ```
 The required packages will be installed to `/node_modules/`.
 
-
-
-
 <a name="repro"></a>
 
 ## 3. Reproduction
@@ -101,7 +98,7 @@ To train one of the 6 models mentioned in the report, use
 ```bash
 python ./api/training/train_model.py -m [model_number]
 ```
-The model will be saved at `./api/training/models/model_[model_number].keras`
+The model will be saved at `api/training/models/model_[model_number].keras`
 
 To export one of your trained models at `api/training/models` as a Tensorflow serving model, using
 ```bash
