@@ -3,22 +3,29 @@ Skintector is a web application that allows users to self-diagnose skin conditio
 
 The front-end was built using [React](https://react.dev/), styled using [Tailwind](https://tailwindcss.com/) and [Mantine](https://mantine.dev/), uses [Dexie (IndexedDB)](https://dexie.org/) as a database, and was developed on [Vite](https://vitejs.dev/). The back-end API runs on [Flask](https://flask.palletsprojects.com/en/3.0.x/) and serves a [Tensorflow](https://www.tensorflow.org/) model.
 
-## Video Demo
-[![Skintector Demo Video](https://img.youtube.com/vi/CnpN-qIJ_VI/0.jpg)](https://www.youtube.com/watch?v=CnpN-qIJ_VI)
-
 ## Table of Contents
-1. [Installation](#install)
+1. [Demo](#demo)
 
-2. [Demo](#demo)
+2. [Where to find what](#directory)
 
-3. [Reproducing this project](#repro)
+2. [Installation](#install)
+
+3. [Reproduction](#repro)
 
 <a name="demo"></a>
+## 1. Demo
+This is an example of how a user can diagnose an image on our website.
 
-## 1. Example demo
 ![Demo Gif](demo.gif)
 
-### What to find where
+Watch the full demo video down below.
+
+[![Skintector Demo Video](https://img.youtube.com/vi/CnpN-qIJ_VI/0.jpg)](https://www.youtube.com/watch?v=CnpN-qIJ_VI)
+
+<a name="directory"></a>
+## 2. What to find where
+The file structure of our project is listed as follows.
+
 ```bash
 repository
 ├── /api/
@@ -43,7 +50,6 @@ repository
 ```
 
 <a name="installation"></a>
-
 ## 2. Installation
 To clone the repo, use
 ```bash
@@ -88,7 +94,6 @@ npm install
 The required packages will be installed to `/node_modules/`.
 
 <a name="repro"></a>
-
 ## 3. Reproduction
 
 ### Training and evaluation
@@ -116,6 +121,12 @@ python ./api/training/evaluate_model.py -m [model_number]
 ### Back-End
 Our website runs Tensorflow serving model. You can use the Tensorflow serving model provided in the repo `api/model/`, or move your exported or downloaded serving model and rename to `api/model/`.
 
+First, set the current directory to api by using
+```bash
+cd api
+```
+The rest of the following commands must be run in `/api/`.
+
 To run the back-end in development mode, use
 ```bash
 python ./api/main.py
@@ -124,15 +135,13 @@ The API will be accessible at http://127.0.0.1:5000 or http://localhost:5000.
 
 To run the back-end in a production setting, use
 ```bash
-cd api
-gunicorn 'main':app
+gunicorn --bind 0.0.0.0:PORT 'main':app
 ```
-
-...
+where `PORT` is a port-forwarded port of your choice.
 
 If you're running the back-end locally, this step can be omitted. Otherwise, create a `.env` file in base directory and fill it in as follows
 ```shell
-VITE_CLASSIFY="address_of_your_flask_server"
+VITE_CLASSIFY="address_of_flask_server:PORT"
 ```
 
 ### Front-End
