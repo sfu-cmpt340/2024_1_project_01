@@ -1,13 +1,8 @@
-import os
-
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-
 import argparse
 
 import keras
 import matplotlib.pyplot as plt
 import tensorflow as tf
-
 from utils import (
     augmentation1,
     augmentation2,

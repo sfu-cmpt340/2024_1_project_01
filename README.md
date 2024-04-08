@@ -79,26 +79,22 @@ python ./api/training/train_model.py -m [model_number]
 ```
 The model will be saved at `./api/training/models/model_[model_number].keras`
 
+To export one of your trained models at `api/training/models` as a Tensorflow serving model, using
+```bash
+python ./api/training/export_serving_model.py -m [model_number]
+```
+The serving model will be saved at `api/training/models/model_[model_number]/`.
+
+If you don't want to train, you can download our trained models [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing). The folder `/models/` contains the trained models `/models/model_[model_number].keras` and their corresponding serving models `/models/model_[model_number]/`.
+
 To evaluate a model, use
 ```bash
 python ./api/training/evaluate_model.py -m [model_number]
 ```
 
-### Inference
-Our website runs a Tensorflow serving model. There are 3 options: 
-
-You can use the Tensorflow serving model provided in the repo `api/model/`, which means you can skip to the next step.
-
-Or you can export one of your trained models at `api/training/models` as a Tensorflow serving model, using
-```bash
-python ./api/training/export_serving_model.py -m [model_number]
-```
-The serving model will be saved at `api/training/models/model_[model_number]/`. Move and rename it to `api/model/`.
-
-Or you can download one of our Tensorflow serving models [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing). The folder `/models/` contains the trained models `/models/model_[model_number].keras` and their corresponding serving models `/models/model_[model_number]/`. Move and rename it to `api/model/`.
-
-
 ### Back-End
+Our website runs Tensorflow serving model. You can use the Tensorflow serving model provided in the repo `api/model/`, or move your exported or downloaded serving model and rename to `api/model/`.
+
 To run the back-end in development mode, use
 ```bash
 python ./api/main.py
