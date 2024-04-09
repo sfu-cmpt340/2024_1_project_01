@@ -3,6 +3,8 @@ Skintector is a web application that allows users to self-diagnose skin conditio
 
 The front-end was built using [React](https://react.dev/), styled using [Tailwind](https://tailwindcss.com/) and [Mantine](https://mantine.dev/), uses [Dexie (IndexedDB)](https://dexie.org/) as a database, and was developed on [Vite](https://vitejs.dev/). The back-end API runs on [Flask](https://flask.palletsprojects.com/en/3.0.x/) and serves a [Tensorflow](https://www.tensorflow.org/) model.
 
+This project was developed by [Jeffrey Jin](https://github.com/jeffreyjkjin), [Hui Hua (Emily) Huang](https://github.com/ehuang3h), [Long Tran](https://github.com/hlongtr), and [Albert Hong](https://github.com/07Albert).
+
 ## Table of Contents
 1. [Demo](#demo)
 
@@ -46,6 +48,7 @@ repository
 ├── README.md                           ## You are here
 ├── tailwind.config.js                  ## Config file for Tailwind
 ├── tsconfig.json, tsconfig.node.json   ## Config files for TypeScript
+├── vercel.json                         ## Config file for Vercel
 ├── vite.config.ts                      ## Config file for Vite
 ```
 
@@ -58,31 +61,34 @@ cd 2024_1_project_01
 ```
 
 ### Training and evaluation
-The training and evaluation scripts require [Python](https://www.python.org/) (tested on 3.11), keras, and keras_cv. Keras requires another library as its backend, which could be jax, tensorflow, or torch. Additionally, tensorflow is needed for data loading functionality and [matplotlib](https://matplotlib.org/stable/users/installing/index.html) is needed to plot training history.
+The training and evaluation scripts require [Python](https://www.python.org/) (tested on 3.11), [Keras](https://keras.io/), and [KerasCV](https://keras.io/keras_cv/). Keras also requires another library for its back-end, which could be [Jax](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html), [Torch](https://pytorch.org/), or [Tensorflow](https://www.tensorflow.org/). No matter what back-end is used, Tensorflow is required for data loading functionality and [Matplotlib](https://matplotlib.org/stable/users/installing/index.html) for plotting training history.
 
-The recommended backends for keras are [jax](https://jax.readthedocs.io/en/latest/installation.html) or [tensorflow](https://www.tensorflow.org/install/pip) with CUDA support. If you install jax or torch as keras backend, you also have to install tensorflow without CUDA support. Otherwise, install tensorflow as keras backend.
+It is recommended to use Tensorflow as a back-end since it has CUDA support which will speed up training and evaluation of the models. If you choose Jax or Torch, you will have to install Tensorflow without CUDA support. 
 
-Both [keras](https://keras.io/getting_started/) and [keras_cv](https://keras.io/getting_started/) should be installed after installing the backend.
+Keras and KerasCV should both be installed after the back-end is installed.
 
-If you are on Linux with an Nvidia GPU, you can install the dependencies for the training scripts using
+If have chosen Jax or Torch as a back-end, please export environment variable `KERAS_BACKEND` as follows
+```bash
+export KERAS_BACKEND="jax"
+```
+or edit your local config file at `~/.keras/keras.json` to configure the back-end.
+
+If you are on Linux with an Nvidia GPU, the dependencies for the training scripts can be installed by using
 ```bash
 pip install -r api/training/requirements.txt
 ```
 
-If you use jax or torch as keras backend, please export environment variable `KERAS_BACKEND` or edit your local config file at `~/.keras/keras.json` to configure your backend. Example:
-```bash
-export KERAS_BACKEND="jax"
-```
-
 It is recommended to install dependencies for both training scripts and back-end in a [Python virtual environment](https://docs.python.org/3/library/venv.html).
 
+
 ### Back-End
-The back-end requires [Python](https://www.python.org/) (tested on 3.11), [Flask](https://flask.palletsprojects.com/en/3.0.x/installation/), [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/), and [tensorflow](https://www.tensorflow.org/install/pip). 
+The back-end requires [Python](https://www.python.org/) (tested on 3.11). 
 
 To install the back-end dependencies, use
 ```bash
 pip install -r api/requirements.txt
 ```
+It is also recommended to use a venv for the back-end dependencies.
 
 ### Front-End
 The front-end requires the installation of [Node.js](https://nodejs.org/en) (tested on v16.17.0).
@@ -97,21 +103,19 @@ The required packages will be installed to `/node_modules/`.
 ## 3. Reproduction
 
 ### Training and evaluation
-The project uses a modified version of SD-198, where every bottom caption have been cropped out to prevent corrupting features the model learns. Download it [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and place inside `/api/training/`.
+The project uses a modified version of SD-198, where each image has its bottom caption cropped to prevent corrupting features that the model will learn. Download the dataset [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing) and place its contents inside `/api/training/`.
 
-To train one of the 6 models mentioned in the report, use
+To train a model, use
 ```bash
 python ./api/training/train_model.py -m [model_number]
 ```
-The model will be saved at `api/training/models/model_[model_number].keras`
+where `[model_number]` is one of the six models mentioned in the report. Once complete, the model will be saved at `api/training/models/model_[model_number].keras`.
 
-To export one of your trained models at `api/training/models` as a Tensorflow serving model, using
+To export one of your trained models at `api/training/models` as a Tensorflow serving model, use
 ```bash
 python ./api/training/export_serving_model.py -m [model_number]
 ```
-The serving model will be saved at `api/training/models/model_[model_number]/`.
-
-If you don't want to train, you can download our trained models [here](https://drive.google.com/drive/folders/1TWRD0MQ_x_Uvrv1Qi8EW7y-g14upFIoG?usp=sharing). The folder `/models/` contains the trained models `/models/model_[model_number].keras` and their corresponding serving models `/models/model_[model_number]/`.
+The serving model will be saved at `/api/training/models/model_[model_number]/`.
 
 To evaluate a model, use
 ```bash
@@ -119,9 +123,9 @@ python ./api/training/evaluate_model.py -m [model_number]
 ```
 
 ### Back-End
-Our website runs Tensorflow serving model. You can use the Tensorflow serving model provided in the repo `api/model/`, or move your exported or downloaded serving model and rename to `api/model/`.
+Our website runs Tensorflow serving model. If you have trained a model as shown above, you can copy and rename the numbered model to `model.keras` and paste it in `/api/model/`. If it was a serving model, you can copy its contents from `/api/training/models/model_[model_number]/` to `/api/model/`. Alternatively, you can download any one of the pretrained models [here](https://drive.google.com/drive/folders/1hat_Rac4liLwh_HUzoZWDhmLshJaLs8_) and place its contents in `/api/model/` as well.
 
-First, set the current directory to api by using
+Then, set the current directory to api by using
 ```bash
 cd api
 ```
@@ -131,17 +135,11 @@ To run the back-end in development mode, use
 ```bash
 python main.py
 ```
-The API will be accessible at http://127.0.0.1:5000 or http://localhost:5000.
-
-To run the back-end in a production setting, use
-```bash
-gunicorn --bind 0.0.0.0:PORT 'main':app
-```
-where `PORT` is a port-forwarded port of your choice.
+The API will be accessible at http://127.0.0.1:5000 or http://localhost:5000. Note that this is not the recommended method to run the back-end for production. 
 
 If you're running the back-end locally, this step can be omitted. Otherwise, create a `.env` file in base directory and fill it in as follows
 ```shell
-VITE_CLASSIFY="address_of_flask_server:PORT"
+VITE_CLASSIFY="address_of_flask_server"
 ```
 
 ### Front-End
