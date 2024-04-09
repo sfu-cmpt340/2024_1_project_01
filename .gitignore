@@ -16,8 +16,7 @@ dist-ssr
 
 # Python
 venv
-venv2
-*.keras
+api/model
 api/training/models
 api/training/sd198
 api/training/__pycache__
