@@ -17,8 +17,6 @@ dist-ssr
 # Python
 venv
 venv2
-api/model
-api/training/models2
 *.keras
 api/training/models
 api/training/sd198
