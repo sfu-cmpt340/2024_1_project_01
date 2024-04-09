@@ -1,0 +1,33 @@
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - flask-server
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+  flask-server:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_APP=main.py
+      - FLASK_RUN_HOST=0.0.0.0
+    depends_on:
+      - tensorflow-serving
+
+  tensorflow-serving:
+    image: tensorflow/serving
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./api/model:/models/model
+    environment:
+      - MODEL_NAME=model
+

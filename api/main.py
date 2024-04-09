@@ -1,17 +1,16 @@
-from base64 import b64decode
-from flask import Flask, request
-from flask_cors import CORS
-import json
+from base64 import b64decode, b64encode
+
+import requests
 import tensorflow as tf
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 # Setup Flask
 app = Flask(__name__)
 CORS(app)
 
-# Load EfficientNetV2M trained on SD-198
-print("Loading model...")
-serving_model = tf.saved_model.load("./model")
-print("Model loaded!")
+# TensorFlow Serving URL
+TF_SERVING_URL = "http://tensorflow-serving:8501/v1/models/model:predict"
 
 # Load labels
 print("Loading labels...")
@@ -22,33 +21,55 @@ print("Labels loaded!")
 
 print("Server is ready!")
 
+
 @app.route("/classify", methods=["POST"])
-def classify() -> json:
+def classify():
     # Get image from user
     data = request.get_json()
     image_data = data["image"]
     print("Image data received")
 
-    # Decode image data and convert to PIL Image
+    # Decode image
     image_bytes = b64decode(image_data.split(",")[1])
     image = tf.image.decode_image(image_bytes)
+
+    # Preprocess image
     image = tf.image.resize(image, (480, 480))
     image = tf.expand_dims(image, 0)
 
-    # Predict the class
-    print("Predicting class...")
-    predictions = serving_model.serve(image).numpy().flatten()
+    # Prepare the request payload
+    image_list = image.numpy().tolist()
+    payload = {"instances": [image_list]}
 
-    # Sort and save top 5 conditions
-    sorted_indices = predictions.argsort()[::-1][:5]
-    top_predictions = {
-        str(labels[i]): float(predictions[i] * 100) for i in sorted_indices
-    }
+    # Make POST request to TensorFlow Serving API
+    print("Sending request to TensorFlow Serving...")
+    response = requests.post(TF_SERVING_URL, json=payload)
+
+    # Handle any errors in the TensorFlow Serving response
+    if response.status_code != 200:
+        return (
+            jsonify(
+                {
+                    "error": "Failed to get response from TensorFlow Serving",
+                    "code": response.status_code,
+                }
+            ),
+            response.status_code,
+        )
+
+    # Process the results
+    predictions = response.json()["predictions"][0]
+    sorted_indices = sorted(
+        range(len(predictions)), key=lambda i: predictions[i], reverse=True
+    )[:5]
+    top_predictions = {labels[i]: predictions[i] * 100 for i in sorted_indices}
+
     print("Predictions made!")
     for condition, probability in top_predictions.items():
-        print(f"{condition.strip()}: {(probability):.2f}%")
+        print(f"{condition.strip()}: {probability:.2f}%")
 
-    return top_predictions
+    return jsonify(top_predictions)
+
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5000)
