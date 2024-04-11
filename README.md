@@ -119,13 +119,14 @@ The serving model will be saved at `/api/training/models/model_[model_number]/`.
 
 You can download our trained models and their corresponding serving models [here](https://drive.google.com/drive/folders/1hat_Rac4liLwh_HUzoZWDhmLshJaLs8_) in `/models/` folder.
 
-To evaluate a model, use
+To evaluate a trained model or downloaded model at `/api/training/models/model_[model_number].keras`, use
 ```bash
 python ./api/training/evaluate_model.py -m [model_number]
 ```
 
+
 ### Back-End
-Our website runs Tensorflow serving model. If you have trained a model as instructed above, you should have `/api/training/models/model_[model_number].keras` Use `/api/training/export_serving_model.py` to export it as a Tensorflow serving model as instructed above. You will get `/api/training/models/model_[model_number]`, whose content should be moved into `/api/model/`. Alternatively, you can download a serving model [here](https://drive.google.com/drive/folders/1hat_Rac4liLwh_HUzoZWDhmLshJaLs8_).
+Our website runs Tensorflow serving model. If you have trained a model as instructed above, you should have `/api/training/models/model_[model_number].keras` Use `/api/training/export_serving_model.py` to export it as a Tensorflow serving model as instructed above. You will get `/api/training/models/model_[model_number]`, whose content should be copied into `/api/model/`. Alternatively, you can download a serving model [here](https://drive.google.com/drive/folders/1hat_Rac4liLwh_HUzoZWDhmLshJaLs8_).
 
 Then, set the current directory to api by using
 ```bash
